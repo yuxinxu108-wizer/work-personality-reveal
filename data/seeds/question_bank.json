@@ -1,0 +1,2144 @@
+[
+  {
+    "id": "q01",
+    "text": "社团招新海报发出去后，报名人数很少。你最想先做什么？",
+    "question_type": "scenario",
+    "basis_notes": "测试用户在该情境下更倾向的工作方式，并映射到用户研究型、活动转化型、数据增长型、内容表达型、用户体验型、业务流程型、项目推进型等方向。",
+    "related_jd_tasks": [
+      "用户访谈",
+      "活动策划",
+      "数据复盘",
+      "选题策划",
+      "体验走查",
+      "流程图梳理"
+    ],
+    "options": [
+      {
+        "id": "q01_a1",
+        "text": "找几个没报名的同学问问，他们卡在了哪里",
+        "weights": [
+          {
+            "direction": "research",
+            "value": 2
+          },
+          {
+            "direction": "campaign",
+            "value": 1
+          }
+        ]
+      },
+      {
+        "id": "q01_a2",
+        "text": "把看到海报、点开链接、填完表单的人数分开看",
+        "weights": [
+          {
+            "direction": "growth",
+            "value": 2
+          },
+          {
+            "direction": "campaign",
+            "value": 1
+          }
+        ]
+      },
+      {
+        "id": "q01_a3",
+        "text": "重写标题和活动介绍，让重点更明显",
+        "weights": [
+          {
+            "direction": "content",
+            "value": 2
+          },
+          {
+            "direction": "campaign",
+            "value": 1
+          }
+        ]
+      },
+      {
+        "id": "q01_a4",
+        "text": "检查报名步骤是不是太麻烦，有没有信息缺失",
+        "weights": [
+          {
+            "direction": "ux",
+            "value": 2
+          },
+          {
+            "direction": "process",
+            "value": 1
+          }
+        ]
+      },
+      {
+        "id": "q01_a5",
+        "text": "重新排一下宣传节奏和负责同学的分工",
+        "weights": [
+          {
+            "direction": "project",
+            "value": 2
+          },
+          {
+            "direction": "process",
+            "value": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "q02",
+    "text": "一个校园小程序被吐槽不好用，你会先关注哪件事？",
+    "question_type": "scenario",
+    "basis_notes": "测试用户在该情境下更倾向的工作方式，并映射到用户体验型、数据增长型、业务流程型、商业分析型、用户研究型、项目推进型等方向。",
+    "related_jd_tasks": [
+      "体验走查",
+      "数据复盘",
+      "流程图梳理",
+      "竞品分析",
+      "用户访谈",
+      "项目排期"
+    ],
+    "options": [
+      {
+        "id": "q02_a1",
+        "text": "用户从打开到完成任务中哪一步最容易放弃",
+        "weights": [
+          {
+            "direction": "ux",
+            "value": 2
+          },
+          {
+            "direction": "growth",
+            "value": 1
+          }
+        ]
+      },
+      {
+        "id": "q02_a2",
+        "text": "不同角色分别要做什么，规则是不是绕来绕去",
+        "weights": [
+          {
+            "direction": "process",
+            "value": 2
+          },
+          {
+            "direction": "strategy",
+            "value": 1
+          }
+        ]
+      },
+      {
+        "id": "q02_a3",
+        "text": "吐槽里反复出现的真实原因是什么",
+        "weights": [
+          {
+            "direction": "research",
+            "value": 2
+          },
+          {
+            "direction": "ux",
+            "value": 1
+          }
+        ]
+      },
+      {
+        "id": "q02_a4",
+        "text": "这些问题会不会影响关键目标，比如报名或预约",
+        "weights": [
+          {
+            "direction": "strategy",
+            "value": 2
+          },
+          {
+            "direction": "growth",
+            "value": 1
+          }
+        ]
+      },
+      {
+        "id": "q02_a5",
+        "text": "先列出改版事项、负责人和完成时间",
+        "weights": [
+          {
+            "direction": "project",
+            "value": 2
+          },
+          {
+            "direction": "process",
+            "value": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "q03",
+    "text": "你负责一个求职账号，最近阅读量下降。你第一步更像会做什么？",
+    "question_type": "scenario",
+    "basis_notes": "测试用户在该情境下更倾向的工作方式，并映射到内容表达型、用户研究型、数据增长型、社群关系型、项目推进型、活动转化型等方向。",
+    "related_jd_tasks": [
+      "选题策划",
+      "用户访谈",
+      "数据复盘",
+      "社群维护",
+      "项目排期",
+      "活动策划"
+    ],
+    "options": [
+      {
+        "id": "q03_a1",
+        "text": "回看最近选题，判断是不是不够贴近学生焦虑",
+        "weights": [
+          {
+            "direction": "content",
+            "value": 2
+          },
+          {
+            "direction": "research",
+            "value": 1
+          }
+        ]
+      },
+      {
+        "id": "q03_a2",
+        "text": "比较每篇标题、收藏、评论的变化",
+        "weights": [
+          {
+            "direction": "growth",
+            "value": 2
+          },
+          {
+            "direction": "content",
+            "value": 1
+          }
+        ]
+      },
+      {
+        "id": "q03_a3",
+        "text": "去评论区和私信里找读者真实困惑",
+        "weights": [
+          {
+            "direction": "research",
+            "value": 2
+          },
+          {
+            "direction": "community",
+            "value": 1
+          }
+        ]
+      },
+      {
+        "id": "q03_a4",
+        "text": "重新安排未来两周的选题和发布时间",
+        "weights": [
+          {
+            "direction": "project",
+            "value": 2
+          },
+          {
+            "direction": "content",
+            "value": 1
+          }
+        ]
+      },
+      {
+        "id": "q03_a5",
+        "text": "组织一次资料领取或打卡活动拉回互动",
+        "weights": [
+          {
+            "direction": "campaign",
+            "value": 2
+          },
+          {
+            "direction": "community",
+            "value": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "q04",
+    "text": "团队对新功能意见不一致，你通常会怎么推进？",
+    "question_type": "scenario",
+    "basis_notes": "测试用户在该情境下更倾向的工作方式，并映射到商业分析型、项目推进型、用户研究型、用户体验型、业务流程型、数据增长型、活动转化型等方向。",
+    "related_jd_tasks": [
+      "竞品分析",
+      "项目排期",
+      "用户访谈",
+      "体验走查",
+      "流程图梳理",
+      "数据复盘"
+    ],
+    "options": [
+      {
+        "id": "q04_a1",
+        "text": "先把目标和判断标准写清楚，再讨论取舍",
+        "weights": [
+          {
+            "direction": "strategy",
+            "value": 2
+          },
+          {
+            "direction": "project",
+            "value": 1
+          }
+        ]
+      },
+      {
+        "id": "q04_a2",
+        "text": "找几个目标用户聊聊，看他们是否真的需要",
+        "weights": [
+          {
+            "direction": "research",
+            "value": 2
+          },
+          {
+            "direction": "ux",
+            "value": 1
+          }
+        ]
+      },
+      {
+        "id": "q04_a3",
+        "text": "画出使用步骤，让大家看到哪里顺哪里卡",
+        "weights": [
+          {
+            "direction": "ux",
+            "value": 2
+          },
+          {
+            "direction": "process",
+            "value": 1
+          }
+        ]
+      },
+      {
+        "id": "q04_a4",
+        "text": "列出每个方案要改的流程、规则和风险",
+        "weights": [
+          {
+            "direction": "process",
+            "value": 2
+          },
+          {
+            "direction": "project",
+            "value": 1
+          }
+        ]
+      },
+      {
+        "id": "q04_a5",
+        "text": "定一个小范围试运行，先看真实反馈",
+        "weights": [
+          {
+            "direction": "growth",
+            "value": 2
+          },
+          {
+            "direction": "campaign",
+            "value": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "q05",
+    "text": "如果要你做一份作品集，你更想从哪里开始？",
+    "question_type": "scenario",
+    "basis_notes": "测试用户在该情境下更倾向的工作方式，并映射到用户体验型、用户研究型、业务流程型、项目推进型、内容表达型、商业分析型、活动转化型、数据增长型等方向。",
+    "related_jd_tasks": [
+      "体验走查",
+      "用户访谈",
+      "流程图梳理",
+      "项目排期",
+      "选题策划",
+      "竞品分析"
+    ],
+    "options": [
+      {
+        "id": "q05_a1",
+        "text": "拆解一个常用 App，提出更顺手的改法",
+        "weights": [
+          {
+            "direction": "ux",
+            "value": 2
+          },
+          {
+            "direction": "research",
+            "value": 1
+          }
+        ]
+      },
+      {
+        "id": "q05_a2",
+        "text": "设计一个校园事务的线上处理流程",
+        "weights": [
+          {
+            "direction": "process",
+            "value": 2
+          },
+          {
+            "direction": "project",
+            "value": 1
+          }
+        ]
+      },
+      {
+        "id": "q05_a3",
+        "text": "做一个账号选题计划，并写出内容样稿",
+        "weights": [
+          {
+            "direction": "content",
+            "value": 2
+          },
+          {
+            "direction": "strategy",
+            "value": 1
+          }
+        ]
+      },
+      {
+        "id": "q05_a4",
+        "text": "设计一场线上活动，从宣传到报名都写清楚",
+        "weights": [
+          {
+            "direction": "campaign",
+            "value": 2
+          },
+          {
+            "direction": "project",
+            "value": 1
+          }
+        ]
+      },
+      {
+        "id": "q05_a5",
+        "text": "分析一个项目哪里流失最多，并提出改进",
+        "weights": [
+          {
+            "direction": "growth",
+            "value": 2
+          },
+          {
+            "direction": "strategy",
+            "value": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "q06",
+    "text": "下面哪种状态最容易让你觉得累？",
+    "question_type": "pressure",
+    "basis_notes": "压力反向题：用日常消耗感区分用户关系、流程细节、项目推进、数据复盘、内容表达等倾向。",
+    "related_jd_tasks": [
+      "社群维护",
+      "流程图梳理",
+      "项目排期",
+      "数据复盘",
+      "选题策划"
+    ],
+    "options": [
+      {
+        "id": "q06_a1",
+        "text": "连续几天都要照顾大家的情绪和互动",
+        "weights": [
+          {
+            "direction": "community",
+            "value": -2
+          },
+          {
+            "direction": "strategy",
+            "value": 1
+          }
+        ]
+      },
+      {
+        "id": "q06_a2",
+        "text": "反复检查一堆步骤、规则和例外情况",
+        "weights": [
+          {
+            "direction": "process",
+            "value": -2
+          },
+          {
+            "direction": "content",
+            "value": 1
+          }
+        ]
+      },
+      {
+        "id": "q06_a3",
+        "text": "一直提醒别人按时完成、还要处理临时变化",
+        "weights": [
+          {
+            "direction": "project",
+            "value": -2
+          },
+          {
+            "direction": "research",
+            "value": 1
+          }
+        ]
+      },
+      {
+        "id": "q06_a4",
+        "text": "对着数字变化找原因，半天都没有明确答案",
+        "weights": [
+          {
+            "direction": "growth",
+            "value": -2
+          },
+          {
+            "direction": "ux",
+            "value": 1
+          }
+        ]
+      },
+      {
+        "id": "q06_a5",
+        "text": "一句话改来改去，只为了让别人更容易看懂",
+        "weights": [
+          {
+            "direction": "content",
+            "value": -2
+          },
+          {
+            "direction": "process",
+            "value": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "q07",
+    "text": "活动当天突然出了问题，你最自然的反应是？",
+    "question_type": "scenario",
+    "basis_notes": "测试用户在该情境下更倾向的工作方式，并映射到项目推进型、活动转化型、社群关系型、商业分析型、数据增长型、内容表达型、用户体验型等方向。",
+    "related_jd_tasks": [
+      "项目排期",
+      "活动策划",
+      "社群维护",
+      "竞品分析",
+      "数据复盘",
+      "选题策划"
+    ],
+    "options": [
+      {
+        "id": "q07_a1",
+        "text": "先稳住现场节奏，安排谁处理哪件事",
+        "weights": [
+          {
+            "direction": "project",
+            "value": 2
+          },
+          {
+            "direction": "campaign",
+            "value": 1
+          }
+        ]
+      },
+      {
+        "id": "q07_a2",
+        "text": "先告诉参与者现在该怎么做，减少混乱",
+        "weights": [
+          {
+            "direction": "community",
+            "value": 2
+          },
+          {
+            "direction": "campaign",
+            "value": 1
+          }
+        ]
+      },
+      {
+        "id": "q07_a3",
+        "text": "先找到影响最大的一步，保证关键目标能完成",
+        "weights": [
+          {
+            "direction": "strategy",
+            "value": 2
+          },
+          {
+            "direction": "growth",
+            "value": 1
+          }
+        ]
+      },
+      {
+        "id": "q07_a4",
+        "text": "先记录问题，方便结束后复盘",
+        "weights": [
+          {
+            "direction": "growth",
+            "value": 2
+          },
+          {
+            "direction": "project",
+            "value": 1
+          }
+        ]
+      },
+      {
+        "id": "q07_a5",
+        "text": "先把临时说明改得更清楚",
+        "weights": [
+          {
+            "direction": "content",
+            "value": 2
+          },
+          {
+            "direction": "ux",
+            "value": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "q08",
+    "text": "朋友说最近有点迷茫，你会怎么帮？",
+    "question_type": "calibration",
+    "basis_notes": "校准题：用帮助他人的日常方式区分需求洞察、流程拆解、项目验证、内容表达和数据反馈倾向。",
+    "related_jd_tasks": [
+      "用户访谈",
+      "流程图梳理",
+      "项目排期",
+      "选题策划",
+      "数据复盘"
+    ],
+    "options": [
+      {
+        "id": "q08_a1",
+        "text": "先陪他聊聊，把真正卡住他的点问出来",
+        "weights": [
+          {
+            "direction": "research",
+            "value": 2
+          },
+          {
+            "direction": "community",
+            "value": 1
+          }
+        ]
+      },
+      {
+        "id": "q08_a2",
+        "text": "帮他把事情拆成几步，看看先做哪一步",
+        "weights": [
+          {
+            "direction": "process",
+            "value": 2
+          },
+          {
+            "direction": "project",
+            "value": 1
+          }
+        ]
+      },
+      {
+        "id": "q08_a3",
+        "text": "建议他先做一个小尝试，用结果判断方向",
+        "weights": [
+          {
+            "direction": "project",
+            "value": 2
+          },
+          {
+            "direction": "strategy",
+            "value": 1
+          }
+        ]
+      },
+      {
+        "id": "q08_a4",
+        "text": "帮他把想法整理成一段更清楚的话",
+        "weights": [
+          {
+            "direction": "content",
+            "value": 2
+          },
+          {
+            "direction": "research",
+            "value": 1
+          }
+        ]
+      },
+      {
+        "id": "q08_a5",
+        "text": "问他最近试过什么、反馈怎么样，再一起判断",
+        "weights": [
+          {
+            "direction": "growth",
+            "value": 2
+          },
+          {
+            "direction": "strategy",
+            "value": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "q09",
+    "text": "你最希望别人怎么评价你的工作？",
+    "question_type": "preference",
+    "basis_notes": "测试用户在该情境下更倾向的工作方式，并映射到用户体验型、用户研究型、内容表达型、业务流程型、商业分析型、项目推进型、活动转化型、社群关系型等方向。",
+    "related_jd_tasks": [
+      "体验走查",
+      "用户访谈",
+      "选题策划",
+      "流程图梳理",
+      "竞品分析",
+      "项目排期"
+    ],
+    "options": [
+      {
+        "id": "q09_a1",
+        "text": "很懂用户，能发现别人没注意到的卡点",
+        "weights": [
+          {
+            "direction": "ux",
+            "value": 2
+          },
+          {
+            "direction": "research",
+            "value": 1
+          }
+        ]
+      },
+      {
+        "id": "q09_a2",
+        "text": "表达清楚，能把复杂事情讲得好懂",
+        "weights": [
+          {
+            "direction": "content",
+            "value": 2
+          },
+          {
+            "direction": "process",
+            "value": 1
+          }
+        ]
+      },
+      {
+        "id": "q09_a3",
+        "text": "判断靠谱，知道先做什么后做什么",
+        "weights": [
+          {
+            "direction": "strategy",
+            "value": 2
+          },
+          {
+            "direction": "project",
+            "value": 1
+          }
+        ]
+      },
+      {
+        "id": "q09_a4",
+        "text": "推进稳定，说到的事情能落地",
+        "weights": [
+          {
+            "direction": "project",
+            "value": 2
+          },
+          {
+            "direction": "campaign",
+            "value": 1
+          }
+        ]
+      },
+      {
+        "id": "q09_a5",
+        "text": "很会连接人，让大家愿意参与",
+        "weights": [
+          {
+            "direction": "community",
+            "value": 2
+          },
+          {
+            "direction": "campaign",
+            "value": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "q10",
+    "text": "看到一个竞品功能，你最容易注意到什么？",
+    "question_type": "scenario",
+    "basis_notes": "测试用户在该情境下更倾向的工作方式，并映射到用户体验型、业务流程型、商业分析型、数据增长型、活动转化型、内容表达型、社群关系型等方向。",
+    "related_jd_tasks": [
+      "体验走查",
+      "流程图梳理",
+      "竞品分析",
+      "数据复盘",
+      "活动策划",
+      "选题策划"
+    ],
+    "options": [
+      {
+        "id": "q10_a1",
+        "text": "它让用户怎么一步步完成任务",
+        "weights": [
+          {
+            "direction": "ux",
+            "value": 2
+          },
+          {
+            "direction": "process",
+            "value": 1
+          }
+        ]
+      },
+      {
+        "id": "q10_a2",
+        "text": "它背后可能有哪些角色和规则",
+        "weights": [
+          {
+            "direction": "process",
+            "value": 2
+          },
+          {
+            "direction": "strategy",
+            "value": 1
+          }
+        ]
+      },
+      {
+        "id": "q10_a3",
+        "text": "它在哪里引导用户继续下一步",
+        "weights": [
+          {
+            "direction": "growth",
+            "value": 2
+          },
+          {
+            "direction": "campaign",
+            "value": 1
+          }
+        ]
+      },
+      {
+        "id": "q10_a4",
+        "text": "它怎么把卖点讲清楚",
+        "weights": [
+          {
+            "direction": "content",
+            "value": 2
+          },
+          {
+            "direction": "strategy",
+            "value": 1
+          }
+        ]
+      },
+      {
+        "id": "q10_a5",
+        "text": "它有没有让用户互相互动",
+        "weights": [
+          {
+            "direction": "community",
+            "value": 2
+          },
+          {
+            "direction": "ux",
+            "value": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "q11",
+    "text": "你和同学一起做了一次小组展示，最后效果不太理想，你会先复盘什么？",
+    "question_type": "calibration",
+    "basis_notes": "小组展示复盘题：用明确的协作场景区分用户感受、流程环节、记录反馈、分工沟通和目标判断倾向。",
+    "related_jd_tasks": [
+      "用户访谈",
+      "流程图梳理",
+      "数据复盘",
+      "项目排期",
+      "竞品分析"
+    ],
+    "options": [
+      {
+        "id": "q11_a1",
+        "text": "大家在准备过程中有没有哪里觉得不顺、不舒服",
+        "weights": [
+          {
+            "direction": "research",
+            "value": 2
+          },
+          {
+            "direction": "community",
+            "value": 1
+          }
+        ]
+      },
+      {
+        "id": "q11_a2",
+        "text": "从选题、分工、制作到展示，哪个环节最容易卡住",
+        "weights": [
+          {
+            "direction": "process",
+            "value": 2
+          },
+          {
+            "direction": "project",
+            "value": 1
+          }
+        ]
+      },
+      {
+        "id": "q11_a3",
+        "text": "有没有具体反馈或分数记录，能看出问题集中在哪里",
+        "weights": [
+          {
+            "direction": "growth",
+            "value": 2
+          },
+          {
+            "direction": "strategy",
+            "value": 1
+          }
+        ]
+      },
+      {
+        "id": "q11_a4",
+        "text": "小组分工和沟通是不是清楚，有没有人重复做或没人做",
+        "weights": [
+          {
+            "direction": "project",
+            "value": 2
+          },
+          {
+            "direction": "process",
+            "value": 1
+          }
+        ]
+      },
+      {
+        "id": "q11_a5",
+        "text": "一开始的展示目标是不是清楚，比如是讲明白、做有趣，还是拿高分",
+        "weights": [
+          {
+            "direction": "strategy",
+            "value": 2
+          },
+          {
+            "direction": "content",
+            "value": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "q12",
+    "text": "你做完一个项目后，最想复盘什么？",
+    "question_type": "scenario",
+    "basis_notes": "测试用户在该情境下更倾向的工作方式，并映射到用户体验型、用户研究型、数据增长型、商业分析型、项目推进型、业务流程型、内容表达型、活动转化型、社群关系型等方向。",
+    "related_jd_tasks": [
+      "体验走查",
+      "用户访谈",
+      "数据复盘",
+      "竞品分析",
+      "项目排期",
+      "流程图梳理"
+    ],
+    "options": [
+      {
+        "id": "q12_a1",
+        "text": "用户到底有没有觉得更好用",
+        "weights": [
+          {
+            "direction": "ux",
+            "value": 2
+          },
+          {
+            "direction": "research",
+            "value": 1
+          }
+        ]
+      },
+      {
+        "id": "q12_a2",
+        "text": "哪个环节最影响最终结果",
+        "weights": [
+          {
+            "direction": "growth",
+            "value": 2
+          },
+          {
+            "direction": "strategy",
+            "value": 1
+          }
+        ]
+      },
+      {
+        "id": "q12_a3",
+        "text": "分工和排期哪里可以更顺",
+        "weights": [
+          {
+            "direction": "project",
+            "value": 2
+          },
+          {
+            "direction": "process",
+            "value": 1
+          }
+        ]
+      },
+      {
+        "id": "q12_a4",
+        "text": "哪些话术、标题或内容更有效",
+        "weights": [
+          {
+            "direction": "content",
+            "value": 2
+          },
+          {
+            "direction": "campaign",
+            "value": 1
+          }
+        ]
+      },
+      {
+        "id": "q12_a5",
+        "text": "用户有没有留下来继续互动",
+        "weights": [
+          {
+            "direction": "community",
+            "value": 2
+          },
+          {
+            "direction": "growth",
+            "value": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "q13",
+    "text": "你更不排斥哪类细活？",
+    "question_type": "preference",
+    "basis_notes": "测试用户在该情境下更倾向的工作方式，并映射到用户体验型、内容表达型、业务流程型、项目推进型、用户研究型、社群关系型、活动转化型、数据增长型、商业分析型等方向。",
+    "related_jd_tasks": [
+      "体验走查",
+      "选题策划",
+      "流程图梳理",
+      "项目排期",
+      "用户访谈",
+      "社群维护"
+    ],
+    "options": [
+      {
+        "id": "q13_a1",
+        "text": "把一个页面的按钮、提示和顺序改到更舒服",
+        "weights": [
+          {
+            "direction": "ux",
+            "value": 2
+          },
+          {
+            "direction": "content",
+            "value": 1
+          }
+        ]
+      },
+      {
+        "id": "q13_a2",
+        "text": "把一堆步骤整理成清单和规则",
+        "weights": [
+          {
+            "direction": "process",
+            "value": 2
+          },
+          {
+            "direction": "project",
+            "value": 1
+          }
+        ]
+      },
+      {
+        "id": "q13_a3",
+        "text": "把评论、私信和访谈内容分门别类",
+        "weights": [
+          {
+            "direction": "research",
+            "value": 2
+          },
+          {
+            "direction": "community",
+            "value": 1
+          }
+        ]
+      },
+      {
+        "id": "q13_a4",
+        "text": "把活动物料、时间和负责人对齐",
+        "weights": [
+          {
+            "direction": "project",
+            "value": 2
+          },
+          {
+            "direction": "campaign",
+            "value": 1
+          }
+        ]
+      },
+      {
+        "id": "q13_a5",
+        "text": "把一组数据整理成结论",
+        "weights": [
+          {
+            "direction": "growth",
+            "value": 2
+          },
+          {
+            "direction": "strategy",
+            "value": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "q14",
+    "text": "一个群越来越冷清，你会先做什么？",
+    "question_type": "scenario",
+    "basis_notes": "测试用户在该情境下更倾向的工作方式，并映射到用户研究型、社群关系型、活动转化型、内容表达型、数据增长型、业务流程型、项目推进型等方向。",
+    "related_jd_tasks": [
+      "用户访谈",
+      "社群维护",
+      "活动策划",
+      "选题策划",
+      "数据复盘",
+      "流程图梳理"
+    ],
+    "options": [
+      {
+        "id": "q14_a1",
+        "text": "观察大家什么时候最愿意说话",
+        "weights": [
+          {
+            "direction": "research",
+            "value": 2
+          },
+          {
+            "direction": "community",
+            "value": 1
+          }
+        ]
+      },
+      {
+        "id": "q14_a2",
+        "text": "设计一个轻量话题或打卡机制",
+        "weights": [
+          {
+            "direction": "community",
+            "value": 2
+          },
+          {
+            "direction": "campaign",
+            "value": 1
+          }
+        ]
+      },
+      {
+        "id": "q14_a3",
+        "text": "看哪些内容曾经让大家互动更多",
+        "weights": [
+          {
+            "direction": "content",
+            "value": 2
+          },
+          {
+            "direction": "growth",
+            "value": 1
+          }
+        ]
+      },
+      {
+        "id": "q14_a4",
+        "text": "把新成员入群后的引导流程改清楚",
+        "weights": [
+          {
+            "direction": "process",
+            "value": 2
+          },
+          {
+            "direction": "community",
+            "value": 1
+          }
+        ]
+      },
+      {
+        "id": "q14_a5",
+        "text": "设定一周目标并安排运营动作",
+        "weights": [
+          {
+            "direction": "project",
+            "value": 2
+          },
+          {
+            "direction": "community",
+            "value": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "q15",
+    "text": "如果让你负责增加一次活动的报名人数，你会优先分析什么？",
+    "question_type": "scenario",
+    "basis_notes": "活动报名增长题：用更主动的运营拆解方式区分人群理解、转化路径、活动吸引力、渠道触达和历史复盘倾向。",
+    "related_jd_tasks": [
+      "用户访谈",
+      "数据复盘",
+      "活动策划",
+      "社群运营",
+      "竞品分析"
+    ],
+    "options": [
+      {
+        "id": "q15_a1",
+        "text": "目标人群是谁，哪些人可能感兴趣但还没有报名",
+        "weights": [
+          {
+            "direction": "research",
+            "value": 2
+          },
+          {
+            "direction": "campaign",
+            "value": 1
+          }
+        ]
+      },
+      {
+        "id": "q15_a2",
+        "text": "从看到活动信息到完成报名，中间哪一步流失最多",
+        "weights": [
+          {
+            "direction": "growth",
+            "value": 2
+          },
+          {
+            "direction": "process",
+            "value": 1
+          }
+        ]
+      },
+      {
+        "id": "q15_a3",
+        "text": "活动本身的吸引力够不够，比如主题、时间、奖励或形式",
+        "weights": [
+          {
+            "direction": "campaign",
+            "value": 2
+          },
+          {
+            "direction": "content",
+            "value": 1
+          }
+        ]
+      },
+      {
+        "id": "q15_a4",
+        "text": "哪些渠道能触达更多潜在报名者，比如社群、公众号、朋友转发",
+        "weights": [
+          {
+            "direction": "community",
+            "value": 2
+          },
+          {
+            "direction": "campaign",
+            "value": 1
+          }
+        ]
+      },
+      {
+        "id": "q15_a5",
+        "text": "看看之前类似活动的报名情况，找出哪些做法曾经有效",
+        "weights": [
+          {
+            "direction": "strategy",
+            "value": 2
+          },
+          {
+            "direction": "growth",
+            "value": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "q16",
+    "text": "你最喜欢哪种起步方式？",
+    "question_type": "preference",
+    "basis_notes": "测试用户在该情境下更倾向的工作方式，并映射到用户研究型、社群关系型、业务流程型、用户体验型、数据增长型、商业分析型、内容表达型、活动转化型、项目推进型等方向。",
+    "related_jd_tasks": [
+      "用户访谈",
+      "社群维护",
+      "流程图梳理",
+      "体验走查",
+      "数据复盘",
+      "竞品分析"
+    ],
+    "options": [
+      {
+        "id": "q16_a1",
+        "text": "先找人聊，听真实想法",
+        "weights": [
+          {
+            "direction": "research",
+            "value": 2
+          },
+          {
+            "direction": "community",
+            "value": 1
+          }
+        ]
+      },
+      {
+        "id": "q16_a2",
+        "text": "先画步骤，理清发生了什么",
+        "weights": [
+          {
+            "direction": "process",
+            "value": 2
+          },
+          {
+            "direction": "ux",
+            "value": 1
+          }
+        ]
+      },
+      {
+        "id": "q16_a3",
+        "text": "先看结果，找最明显的问题",
+        "weights": [
+          {
+            "direction": "growth",
+            "value": 2
+          },
+          {
+            "direction": "strategy",
+            "value": 1
+          }
+        ]
+      },
+      {
+        "id": "q16_a4",
+        "text": "先写出来，让别人能看懂",
+        "weights": [
+          {
+            "direction": "content",
+            "value": 2
+          },
+          {
+            "direction": "campaign",
+            "value": 1
+          }
+        ]
+      },
+      {
+        "id": "q16_a5",
+        "text": "先拆计划，确定怎么推进",
+        "weights": [
+          {
+            "direction": "project",
+            "value": 2
+          },
+          {
+            "direction": "strategy",
+            "value": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "q17",
+    "text": "团队只有一天时间完成展示，你会优先保证什么？",
+    "question_type": "calibration",
+    "basis_notes": "测试用户在该情境下更倾向的工作方式，并映射到内容表达型、商业分析型、业务流程型、项目推进型、数据增长型、用户研究型、活动转化型、社群关系型等方向。",
+    "related_jd_tasks": [
+      "选题策划",
+      "竞品分析",
+      "流程图梳理",
+      "项目排期",
+      "数据复盘",
+      "用户访谈"
+    ],
+    "options": [
+      {
+        "id": "q17_a1",
+        "text": "故事讲清楚，别人一听就懂",
+        "weights": [
+          {
+            "direction": "content",
+            "value": 2
+          },
+          {
+            "direction": "strategy",
+            "value": 1
+          }
+        ]
+      },
+      {
+        "id": "q17_a2",
+        "text": "流程完整，不要漏掉关键环节",
+        "weights": [
+          {
+            "direction": "process",
+            "value": 2
+          },
+          {
+            "direction": "project",
+            "value": 1
+          }
+        ]
+      },
+      {
+        "id": "q17_a3",
+        "text": "结论有依据，不只是主观感觉",
+        "weights": [
+          {
+            "direction": "growth",
+            "value": 2
+          },
+          {
+            "direction": "research",
+            "value": 1
+          }
+        ]
+      },
+      {
+        "id": "q17_a4",
+        "text": "分工明确，按时交付",
+        "weights": [
+          {
+            "direction": "project",
+            "value": 2
+          },
+          {
+            "direction": "campaign",
+            "value": 1
+          }
+        ]
+      },
+      {
+        "id": "q17_a5",
+        "text": "展示对象能产生兴趣或参与",
+        "weights": [
+          {
+            "direction": "campaign",
+            "value": 2
+          },
+          {
+            "direction": "community",
+            "value": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "q18",
+    "text": "你看到用户反馈很分散，会怎么整理？",
+    "question_type": "scenario",
+    "basis_notes": "分散反馈整理题：保留用户反馈分散的语境，用更清楚的日常表达区分归类、路径定位、频次判断、普遍性判断和推进解决倾向。",
+    "related_jd_tasks": [
+      "用户访谈",
+      "体验走查",
+      "流程图梳理",
+      "数据复盘",
+      "项目排期"
+    ],
+    "options": [
+      {
+        "id": "q18_a1",
+        "text": "先把反馈按类型归类，比如信息不清楚、流程麻烦、内容不吸引人",
+        "weights": [
+          {
+            "direction": "research",
+            "value": 2
+          },
+          {
+            "direction": "ux",
+            "value": 1
+          }
+        ]
+      },
+      {
+        "id": "q18_a2",
+        "text": "把反馈放回活动前、中、后的过程里，看问题主要出在哪些环节",
+        "weights": [
+          {
+            "direction": "process",
+            "value": 2
+          },
+          {
+            "direction": "ux",
+            "value": 1
+          }
+        ]
+      },
+      {
+        "id": "q18_a3",
+        "text": "先找被反复提到的问题，判断哪些最常见",
+        "weights": [
+          {
+            "direction": "growth",
+            "value": 2
+          },
+          {
+            "direction": "strategy",
+            "value": 1
+          }
+        ]
+      },
+      {
+        "id": "q18_a4",
+        "text": "区分哪些是个别人吐槽，哪些是很多人都会遇到的问题",
+        "weights": [
+          {
+            "direction": "research",
+            "value": 2
+          },
+          {
+            "direction": "strategy",
+            "value": 1
+          }
+        ]
+      },
+      {
+        "id": "q18_a5",
+        "text": "整理成几条最需要解决的问题，再决定先改什么",
+        "weights": [
+          {
+            "direction": "project",
+            "value": 2
+          },
+          {
+            "direction": "process",
+            "value": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "q19",
+    "text": "下面哪件事最让你有成就感？",
+    "question_type": "scenario",
+    "basis_notes": "测试用户在该情境下更倾向的工作方式，并映射到用户体验型、内容表达型、活动转化型、社群关系型、用户研究型、商业分析型、项目推进型、业务流程型、数据增长型等方向。",
+    "related_jd_tasks": [
+      "体验走查",
+      "选题策划",
+      "活动策划",
+      "社群维护",
+      "用户访谈",
+      "竞品分析"
+    ],
+    "options": [
+      {
+        "id": "q19_a1",
+        "text": "把一个难懂页面改得一看就会用",
+        "weights": [
+          {
+            "direction": "ux",
+            "value": 2
+          },
+          {
+            "direction": "content",
+            "value": 1
+          }
+        ]
+      },
+      {
+        "id": "q19_a2",
+        "text": "让一次活动从没人理到有人参加",
+        "weights": [
+          {
+            "direction": "campaign",
+            "value": 2
+          },
+          {
+            "direction": "community",
+            "value": 1
+          }
+        ]
+      },
+      {
+        "id": "q19_a3",
+        "text": "通过观察发现用户真正的问题",
+        "weights": [
+          {
+            "direction": "research",
+            "value": 2
+          },
+          {
+            "direction": "strategy",
+            "value": 1
+          }
+        ]
+      },
+      {
+        "id": "q19_a4",
+        "text": "把混乱任务推进到准时完成",
+        "weights": [
+          {
+            "direction": "project",
+            "value": 2
+          },
+          {
+            "direction": "process",
+            "value": 1
+          }
+        ]
+      },
+      {
+        "id": "q19_a5",
+        "text": "用证据说明为什么要改某一步",
+        "weights": [
+          {
+            "direction": "growth",
+            "value": 2
+          },
+          {
+            "direction": "strategy",
+            "value": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "q20",
+    "text": "你更想避开哪种日常？",
+    "question_type": "pressure",
+    "basis_notes": "压力反向题：区分持续用户沟通、复杂流程、内容表达、数据不确定性和项目推进压力。",
+    "related_jd_tasks": [
+      "用户访谈",
+      "流程图梳理",
+      "选题策划",
+      "数据复盘",
+      "项目排期"
+    ],
+    "options": [
+      {
+        "id": "q20_a1",
+        "text": "每天都要主动找人聊，听很多零散想法",
+        "weights": [
+          {
+            "direction": "research",
+            "value": -2
+          },
+          {
+            "direction": "process",
+            "value": 1
+          }
+        ]
+      },
+      {
+        "id": "q20_a2",
+        "text": "每天都在处理细碎规则，哪里都不能漏",
+        "weights": [
+          {
+            "direction": "process",
+            "value": -2
+          },
+          {
+            "direction": "content",
+            "value": 1
+          }
+        ]
+      },
+      {
+        "id": "q20_a3",
+        "text": "每天都要想怎么把话说得更吸引人",
+        "weights": [
+          {
+            "direction": "content",
+            "value": -2
+          },
+          {
+            "direction": "growth",
+            "value": 1
+          }
+        ]
+      },
+      {
+        "id": "q20_a4",
+        "text": "每天都面对不确定的数字，还要找出规律",
+        "weights": [
+          {
+            "direction": "growth",
+            "value": -2
+          },
+          {
+            "direction": "community",
+            "value": 1
+          }
+        ]
+      },
+      {
+        "id": "q20_a5",
+        "text": "每天都在协调进度，处理别人临时变化",
+        "weights": [
+          {
+            "direction": "project",
+            "value": -2
+          },
+          {
+            "direction": "ux",
+            "value": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "q21",
+    "text": "如果你要帮一个产品做新手引导，你会重点看？",
+    "question_type": "calibration",
+    "basis_notes": "测试用户在该情境下更倾向的工作方式，并映射到用户体验型、内容表达型、用户研究型、商业分析型、数据增长型、项目推进型、业务流程型等方向。",
+    "related_jd_tasks": [
+      "体验走查",
+      "选题策划",
+      "用户访谈",
+      "竞品分析",
+      "数据复盘",
+      "项目排期"
+    ],
+    "options": [
+      {
+        "id": "q21_a1",
+        "text": "用户第一眼能不能知道下一步做什么",
+        "weights": [
+          {
+            "direction": "ux",
+            "value": 2
+          },
+          {
+            "direction": "content",
+            "value": 1
+          }
+        ]
+      },
+      {
+        "id": "q21_a2",
+        "text": "引导是否覆盖不同用户的不同需求",
+        "weights": [
+          {
+            "direction": "research",
+            "value": 2
+          },
+          {
+            "direction": "strategy",
+            "value": 1
+          }
+        ]
+      },
+      {
+        "id": "q21_a3",
+        "text": "引导结束后用户有没有继续使用",
+        "weights": [
+          {
+            "direction": "growth",
+            "value": 2
+          },
+          {
+            "direction": "ux",
+            "value": 1
+          }
+        ]
+      },
+      {
+        "id": "q21_a4",
+        "text": "引导文案是不是简单直接",
+        "weights": [
+          {
+            "direction": "content",
+            "value": 2
+          },
+          {
+            "direction": "ux",
+            "value": 1
+          }
+        ]
+      },
+      {
+        "id": "q21_a5",
+        "text": "设计、开发、运营谁在什么时候配合",
+        "weights": [
+          {
+            "direction": "project",
+            "value": 2
+          },
+          {
+            "direction": "process",
+            "value": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "q22",
+    "text": "你更能接受哪种不确定？",
+    "question_type": "preference",
+    "basis_notes": "测试用户在该情境下更倾向的工作方式，并映射到用户研究型、用户体验型、活动转化型、数据增长型、项目推进型、业务流程型、商业分析型、内容表达型等方向。",
+    "related_jd_tasks": [
+      "用户访谈",
+      "体验走查",
+      "活动策划",
+      "数据复盘",
+      "项目排期",
+      "流程图梳理"
+    ],
+    "options": [
+      {
+        "id": "q22_a1",
+        "text": "先访谈几个人，再慢慢归纳需求",
+        "weights": [
+          {
+            "direction": "research",
+            "value": 2
+          },
+          {
+            "direction": "ux",
+            "value": 1
+          }
+        ]
+      },
+      {
+        "id": "q22_a2",
+        "text": "先上线一个小活动，再看真实参与情况",
+        "weights": [
+          {
+            "direction": "campaign",
+            "value": 2
+          },
+          {
+            "direction": "growth",
+            "value": 1
+          }
+        ]
+      },
+      {
+        "id": "q22_a3",
+        "text": "先做一个粗略方案，再协调大家补齐",
+        "weights": [
+          {
+            "direction": "project",
+            "value": 2
+          },
+          {
+            "direction": "process",
+            "value": 1
+          }
+        ]
+      },
+      {
+        "id": "q22_a4",
+        "text": "先提出判断框架，再逐步找证据",
+        "weights": [
+          {
+            "direction": "strategy",
+            "value": 2
+          },
+          {
+            "direction": "growth",
+            "value": 1
+          }
+        ]
+      },
+      {
+        "id": "q22_a5",
+        "text": "先发几种内容，观察哪种更受欢迎",
+        "weights": [
+          {
+            "direction": "content",
+            "value": 2
+          },
+          {
+            "direction": "growth",
+            "value": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "q23",
+    "text": "如果一个任务一直没人主动负责，你会先怎么处理？",
+    "question_type": "calibration",
+    "basis_notes": "协作推进题：围绕没人主动负责的具体问题，区分任务价值判断、卡点诊断、拆解协作、主动试做和责任确认倾向。",
+    "related_jd_tasks": [
+      "项目排期",
+      "流程图梳理",
+      "用户访谈",
+      "活动策划",
+      "需求分析"
+    ],
+    "options": [
+      {
+        "id": "q23_a1",
+        "text": "先确认这个任务到底有没有必要做，为什么要做",
+        "weights": [
+          {
+            "direction": "strategy",
+            "value": 2
+          },
+          {
+            "direction": "project",
+            "value": 1
+          }
+        ]
+      },
+      {
+        "id": "q23_a2",
+        "text": "先弄清楚为什么没人接，是目标不清、太麻烦，还是没人有时间",
+        "weights": [
+          {
+            "direction": "research",
+            "value": 2
+          },
+          {
+            "direction": "project",
+            "value": 1
+          }
+        ]
+      },
+      {
+        "id": "q23_a3",
+        "text": "先把任务拆小，明确每一步需要谁配合",
+        "weights": [
+          {
+            "direction": "process",
+            "value": 2
+          },
+          {
+            "direction": "project",
+            "value": 1
+          }
+        ]
+      },
+      {
+        "id": "q23_a4",
+        "text": "先主动接住一小部分，做出一个能推动下去的初版",
+        "weights": [
+          {
+            "direction": "project",
+            "value": 2
+          },
+          {
+            "direction": "campaign",
+            "value": 1
+          }
+        ]
+      },
+      {
+        "id": "q23_a5",
+        "text": "先把卡住的地方说清楚，请大家一起确认负责人和完成时间",
+        "weights": [
+          {
+            "direction": "project",
+            "value": 2
+          },
+          {
+            "direction": "community",
+            "value": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "q24",
+    "text": "你希望实习每天更多接触什么？",
+    "question_type": "preference",
+    "basis_notes": "测试用户在该情境下更倾向的工作方式，并映射到用户研究型、社群关系型、用户体验型、业务流程型、内容表达型、活动转化型、项目推进型、商业分析型、数据增长型等方向。",
+    "related_jd_tasks": [
+      "用户访谈",
+      "社群维护",
+      "体验走查",
+      "流程图梳理",
+      "选题策划",
+      "活动策划"
+    ],
+    "options": [
+      {
+        "id": "q24_a1",
+        "text": "真实用户和他们的反馈",
+        "weights": [
+          {
+            "direction": "research",
+            "value": 2
+          },
+          {
+            "direction": "community",
+            "value": 1
+          }
+        ]
+      },
+      {
+        "id": "q24_a2",
+        "text": "功能、页面和使用路径",
+        "weights": [
+          {
+            "direction": "ux",
+            "value": 2
+          },
+          {
+            "direction": "process",
+            "value": 1
+          }
+        ]
+      },
+      {
+        "id": "q24_a3",
+        "text": "内容、标题和平台表达",
+        "weights": [
+          {
+            "direction": "content",
+            "value": 2
+          },
+          {
+            "direction": "campaign",
+            "value": 1
+          }
+        ]
+      },
+      {
+        "id": "q24_a4",
+        "text": "活动、资源和执行节奏",
+        "weights": [
+          {
+            "direction": "campaign",
+            "value": 2
+          },
+          {
+            "direction": "project",
+            "value": 1
+          }
+        ]
+      },
+      {
+        "id": "q24_a5",
+        "text": "目标、数据和决策依据",
+        "weights": [
+          {
+            "direction": "strategy",
+            "value": 2
+          },
+          {
+            "direction": "growth",
+            "value": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "q25",
+    "text": "如果几个选择看起来都可以，你更愿意怎么试出来？",
+    "question_type": "preference",
+    "basis_notes": "收尾偏好题：用日常验证方式区分项目实践、需求访谈、数据反馈、内容表达和策略拆解。",
+    "related_jd_tasks": [
+      "项目排期",
+      "用户访谈",
+      "数据复盘",
+      "选题策划",
+      "竞品分析"
+    ],
+    "options": [
+      {
+        "id": "q25_a1",
+        "text": "先做一件小事，看自己最享受哪一部分",
+        "weights": [
+          {
+            "direction": "project",
+            "value": 2
+          },
+          {
+            "direction": "strategy",
+            "value": 1
+          }
+        ]
+      },
+      {
+        "id": "q25_a2",
+        "text": "找做过类似选择的人聊聊真实感受",
+        "weights": [
+          {
+            "direction": "research",
+            "value": 2
+          },
+          {
+            "direction": "community",
+            "value": 1
+          }
+        ]
+      },
+      {
+        "id": "q25_a3",
+        "text": "同时试两三种方法，用反馈来判断",
+        "weights": [
+          {
+            "direction": "growth",
+            "value": 2
+          },
+          {
+            "direction": "strategy",
+            "value": 1
+          }
+        ]
+      },
+      {
+        "id": "q25_a4",
+        "text": "先把每个选择讲清楚，看哪个最说得通",
+        "weights": [
+          {
+            "direction": "content",
+            "value": 2
+          },
+          {
+            "direction": "project",
+            "value": 1
+          }
+        ]
+      },
+      {
+        "id": "q25_a5",
+        "text": "把几个选择的共同点拆出来，找最稳的一条路",
+        "weights": [
+          {
+            "direction": "strategy",
+            "value": 2
+          },
+          {
+            "direction": "process",
+            "value": 1
+          }
+        ]
+      }
+    ]
+  }
+]

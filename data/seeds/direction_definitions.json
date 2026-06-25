@@ -1,0 +1,272 @@
+[
+  {
+    "key": "ux",
+    "label": "用户体验型",
+    "short_label": "C 端产品",
+    "animal": "小猫",
+    "avatar_src": "./assets/avatars/ux-cat.png",
+    "plain_summary": "适合从真实使用场景里发现问题，把功能改得更顺手、更容易理解。",
+    "competency_definition": "关注用户完成任务时的路径、理解成本、情绪反馈和体验阻力。",
+    "typical_tasks": [
+      "体验走查",
+      "用户反馈整理",
+      "竞品功能拆解",
+      "原型优化"
+    ],
+    "common_capabilities": [
+      "用户视角",
+      "细节观察",
+      "问题表达",
+      "基础原型"
+    ],
+    "suitable_roles": [
+      "C 端产品实习生",
+      "用户体验产品实习生",
+      "用户研究实习生"
+    ],
+    "risk_notes": [
+      "容易只停留在主观感受，需要补充证据和优先级判断。"
+    ],
+    "portfolio_guidance": "做一个常用 App 的体验优化项目，展示问题发现、证据和改版方案。"
+  },
+  {
+    "key": "process",
+    "label": "业务流程型",
+    "short_label": "B 端产品",
+    "animal": "小海狸",
+    "avatar_src": "./assets/avatars/process-beaver.png",
+    "plain_summary": "适合梳理角色、规则和步骤，把复杂协作变成更清楚的流程。",
+    "competency_definition": "关注业务角色、状态流转、权限规则、异常处理和协作效率。",
+    "typical_tasks": [
+      "流程图梳理",
+      "后台需求整理",
+      "规则设计",
+      "异常场景补充"
+    ],
+    "common_capabilities": [
+      "结构化思维",
+      "流程意识",
+      "规则表达",
+      "耐心拆解"
+    ],
+    "suitable_roles": [
+      "B 端产品实习生",
+      "后台产品实习生",
+      "平台运营实习生"
+    ],
+    "risk_notes": [
+      "容易表达抽象，需要结合具体业务场景说明价值。"
+    ],
+    "portfolio_guidance": "设计一个校园事务线上处理流程，展示角色、状态和异常处理。"
+  },
+  {
+    "key": "growth",
+    "label": "数据增长型",
+    "short_label": "增长运营",
+    "animal": "小狐狸",
+    "avatar_src": "./assets/avatars/growth-fox.png",
+    "plain_summary": "适合观察每一步有多少人留下来，用数字判断哪里最值得先改。",
+    "competency_definition": "关注指标变化、关键路径、转化、留存和实验验证。",
+    "typical_tasks": [
+      "数据复盘",
+      "路径分析",
+      "效果对比",
+      "增长实验设计"
+    ],
+    "common_capabilities": [
+      "指标意识",
+      "表格能力",
+      "假设验证",
+      "结果复盘"
+    ],
+    "suitable_roles": [
+      "增长产品实习生",
+      "增长运营实习生",
+      "数据运营实习生"
+    ],
+    "risk_notes": [
+      "容易只看数字，需要补充用户原因和业务背景。"
+    ],
+    "portfolio_guidance": "分析一个报名或关注路径的流失问题，提出可验证的改进方案。"
+  },
+  {
+    "key": "content",
+    "label": "内容表达型",
+    "short_label": "内容运营",
+    "animal": "小鹦鹉",
+    "avatar_src": "./assets/avatars/content-parrot.png",
+    "plain_summary": "适合把信息整理成用户愿意点开、看懂、收藏或转发的内容。",
+    "competency_definition": "关注选题、文案、平台表达、内容结构和传播反馈。",
+    "typical_tasks": [
+      "选题策划",
+      "标题优化",
+      "内容排期",
+      "内容数据复盘"
+    ],
+    "common_capabilities": [
+      "表达能力",
+      "热点敏感",
+      "内容结构",
+      "平台理解"
+    ],
+    "suitable_roles": [
+      "内容运营实习生",
+      "新媒体运营实习生",
+      "内容产品实习生"
+    ],
+    "risk_notes": [
+      "容易凭感觉判断内容好坏，需要补数据反馈。"
+    ],
+    "portfolio_guidance": "搭建一个面向大学生求职的内容账号方案，展示选题、样稿和复盘指标。"
+  },
+  {
+    "key": "campaign",
+    "label": "活动转化型",
+    "short_label": "活动运营",
+    "animal": "小兔子",
+    "avatar_src": "./assets/avatars/campaign-rabbit.png",
+    "plain_summary": "适合把目标变成具体活动，让更多人愿意参与并完成关键动作。",
+    "competency_definition": "关注活动目标、参与路径、触达节奏、资源协调和结果复盘。",
+    "typical_tasks": [
+      "活动策划",
+      "报名提升",
+      "物料准备",
+      "活动复盘"
+    ],
+    "common_capabilities": [
+      "执行力",
+      "转化意识",
+      "协调能力",
+      "风险预案"
+    ],
+    "suitable_roles": [
+      "活动运营实习生",
+      "校园运营实习生",
+      "营销运营实习生"
+    ],
+    "risk_notes": [
+      "容易只写创意，需要补完整路径、资源和复盘指标。"
+    ],
+    "portfolio_guidance": "策划一场线上打卡或资料领取活动，展示目标、路径、执行和复盘。"
+  },
+  {
+    "key": "community",
+    "label": "社群关系型",
+    "short_label": "用户运营",
+    "animal": "小水獭",
+    "avatar_src": "./assets/avatars/community-otter.png",
+    "plain_summary": "适合维护用户关系，让用户愿意留下来、互动起来、持续参与。",
+    "competency_definition": "关注用户关系、社群氛围、互动机制、召回和长期留存。",
+    "typical_tasks": [
+      "社群维护",
+      "用户互动",
+      "用户召回",
+      "活动通知"
+    ],
+    "common_capabilities": [
+      "沟通耐心",
+      "氛围观察",
+      "用户陪伴",
+      "机制设计"
+    ],
+    "suitable_roles": [
+      "社群运营实习生",
+      "用户运营实习生",
+      "私域运营实习生"
+    ],
+    "risk_notes": [
+      "容易变成日常闲聊，需要沉淀机制和指标。"
+    ],
+    "portfolio_guidance": "设计一个求职互助社群运营方案，展示入群、互动、召回和留存设计。"
+  },
+  {
+    "key": "research",
+    "label": "用户研究型",
+    "short_label": "需求洞察",
+    "animal": "小鹿",
+    "avatar_src": "./assets/avatars/research-deer.png",
+    "plain_summary": "适合通过聊天、观察和整理反馈，弄清楚真实用户到底需要什么。",
+    "competency_definition": "关注用户访谈、问卷、反馈归纳、需求洞察和问题验证。",
+    "typical_tasks": [
+      "用户访谈",
+      "问卷整理",
+      "反馈归类",
+      "洞察报告"
+    ],
+    "common_capabilities": [
+      "共情能力",
+      "提问能力",
+      "归纳能力",
+      "客观记录"
+    ],
+    "suitable_roles": [
+      "用户研究实习生",
+      "产品调研实习生",
+      "用户运营实习生"
+    ],
+    "risk_notes": [
+      "容易只收集故事，需要把反馈归纳成可行动的问题。"
+    ],
+    "portfolio_guidance": "完成一次小型用户访谈项目，展示问题设计、访谈记录和洞察结论。"
+  },
+  {
+    "key": "strategy",
+    "label": "商业分析型",
+    "short_label": "策略运营",
+    "animal": "小猫头鹰",
+    "avatar_src": "./assets/avatars/strategy-owl.png",
+    "plain_summary": "适合把目标、资源、竞品和结果放在一起看，判断下一步怎么做更划算。",
+    "competency_definition": "关注业务目标、竞品对比、优先级判断、商业模式和策略取舍。",
+    "typical_tasks": [
+      "竞品分析",
+      "策略拆解",
+      "优先级判断",
+      "业务复盘"
+    ],
+    "common_capabilities": [
+      "逻辑判断",
+      "全局视角",
+      "信息整合",
+      "结构化表达"
+    ],
+    "suitable_roles": [
+      "策略运营实习生",
+      "商业分析实习生",
+      "策略产品实习生"
+    ],
+    "risk_notes": [
+      "容易停留在宏观判断，需要补数据和落地动作。"
+    ],
+    "portfolio_guidance": "做一个竞品和机会判断分析项目，展示判断框架和行动建议。"
+  },
+  {
+    "key": "project",
+    "label": "项目推进型",
+    "short_label": "执行推进",
+    "animal": "小边牧",
+    "avatar_src": "./assets/avatars/project-border-collie.png",
+    "plain_summary": "适合把目标拆成计划，协调不同人和资源，保证事情按时落地。",
+    "competency_definition": "关注排期、分工、风险、跨方沟通和交付质量。",
+    "typical_tasks": [
+      "项目排期",
+      "进度跟进",
+      "跨方协调",
+      "风险预案"
+    ],
+    "common_capabilities": [
+      "责任心",
+      "推进力",
+      "沟通协调",
+      "节奏管理"
+    ],
+    "suitable_roles": [
+      "项目运营实习生",
+      "产品运营实习生",
+      "活动运营实习生"
+    ],
+    "risk_notes": [
+      "容易只做执行，需要补目标判断和复盘表达。"
+    ],
+    "portfolio_guidance": "推进一个从计划到复盘的小项目，展示排期、协调和结果。"
+  }
+]

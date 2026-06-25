@@ -1,0 +1,938 @@
+[
+  {
+    "id": "jd_001",
+    "company": "晴川科技",
+    "role_title": "用户体验产品实习生",
+    "role_category": "产品",
+    "source_url": "manual://seed/jd_001",
+    "source_type": "manual_note",
+    "location": "不限",
+    "employment_type": "实习",
+    "raw_text": "负责体验走查、用户反馈整理、原型优化，与产品、运营或设计同学协作推进实习项目落地。要求具备用户视角、细节观察、问题表达，能使用Figma、Excel完成基础整理和复盘。",
+    "responsibilities_text": "负责体验走查、用户反馈整理、原型优化，与产品、运营或设计同学协作推进实习项目落地。",
+    "requirements_text": "要求具备用户视角、细节观察、问题表达，能使用Figma、Excel完成基础整理和复盘。",
+    "collected_at": "2026-05-28",
+    "annotation": {
+      "mapped_direction": "ux",
+      "secondary_directions": [
+        "research"
+      ],
+      "task_keywords": [
+        "体验走查",
+        "用户反馈整理",
+        "原型优化"
+      ],
+      "capability_keywords": [
+        "用户视角",
+        "细节观察",
+        "问题表达"
+      ],
+      "tool_keywords": [
+        "Figma",
+        "Excel"
+      ],
+      "jargon_terms": [
+        "用户反馈",
+        "体验优化"
+      ],
+      "notes": "Manual seed record for local schema validation and JD-backed evidence prototyping."
+    }
+  },
+  {
+    "id": "jd_002",
+    "company": "云鹿出行",
+    "role_title": "C 端产品实习生",
+    "role_category": "产品",
+    "source_url": "manual://seed/jd_002",
+    "source_type": "manual_note",
+    "location": "不限",
+    "employment_type": "实习",
+    "raw_text": "负责用户路径分析、竞品功能拆解、需求文档，与产品、运营或设计同学协作推进实习项目落地。要求具备原型表达、数据意识、沟通能力，能使用Figma、Axure完成基础整理和复盘。",
+    "responsibilities_text": "负责用户路径分析、竞品功能拆解、需求文档，与产品、运营或设计同学协作推进实习项目落地。",
+    "requirements_text": "要求具备原型表达、数据意识、沟通能力，能使用Figma、Axure完成基础整理和复盘。",
+    "collected_at": "2026-05-28",
+    "annotation": {
+      "mapped_direction": "ux",
+      "secondary_directions": [
+        "growth"
+      ],
+      "task_keywords": [
+        "用户路径分析",
+        "竞品功能拆解",
+        "需求文档"
+      ],
+      "capability_keywords": [
+        "原型表达",
+        "数据意识",
+        "沟通能力"
+      ],
+      "tool_keywords": [
+        "Figma",
+        "Axure"
+      ],
+      "jargon_terms": [
+        "转化",
+        "需求"
+      ],
+      "notes": "Manual seed record for local schema validation and JD-backed evidence prototyping."
+    }
+  },
+  {
+    "id": "jd_003",
+    "company": "北辰云服",
+    "role_title": "后台产品实习生",
+    "role_category": "产品",
+    "source_url": "manual://seed/jd_003",
+    "source_type": "manual_note",
+    "location": "不限",
+    "employment_type": "实习",
+    "raw_text": "负责流程图梳理、后台需求整理、异常场景补充，与产品、运营或设计同学协作推进实习项目落地。要求具备结构化思维、规则表达、耐心拆解，能使用XMind、Axure完成基础整理和复盘。",
+    "responsibilities_text": "负责流程图梳理、后台需求整理、异常场景补充，与产品、运营或设计同学协作推进实习项目落地。",
+    "requirements_text": "要求具备结构化思维、规则表达、耐心拆解，能使用XMind、Axure完成基础整理和复盘。",
+    "collected_at": "2026-05-28",
+    "annotation": {
+      "mapped_direction": "process",
+      "secondary_directions": [
+        "project"
+      ],
+      "task_keywords": [
+        "流程图梳理",
+        "后台需求整理",
+        "异常场景补充"
+      ],
+      "capability_keywords": [
+        "结构化思维",
+        "规则表达",
+        "耐心拆解"
+      ],
+      "tool_keywords": [
+        "XMind",
+        "Axure"
+      ],
+      "jargon_terms": [
+        "状态流转",
+        "权限"
+      ],
+      "notes": "Manual seed record for local schema validation and JD-backed evidence prototyping."
+    }
+  },
+  {
+    "id": "jd_004",
+    "company": "星河零售",
+    "role_title": "平台运营实习生",
+    "role_category": "运营",
+    "source_url": "manual://seed/jd_004",
+    "source_type": "manual_note",
+    "location": "不限",
+    "employment_type": "实习",
+    "raw_text": "负责商家流程梳理、规则配置、问题工单整理，与产品、运营或设计同学协作推进实习项目落地。要求具备流程意识、跨团队沟通、执行力，能使用Excel、飞书完成基础整理和复盘。",
+    "responsibilities_text": "负责商家流程梳理、规则配置、问题工单整理，与产品、运营或设计同学协作推进实习项目落地。",
+    "requirements_text": "要求具备流程意识、跨团队沟通、执行力，能使用Excel、飞书完成基础整理和复盘。",
+    "collected_at": "2026-05-28",
+    "annotation": {
+      "mapped_direction": "process",
+      "secondary_directions": [
+        "strategy"
+      ],
+      "task_keywords": [
+        "商家流程梳理",
+        "规则配置",
+        "问题工单整理"
+      ],
+      "capability_keywords": [
+        "流程意识",
+        "跨团队沟通",
+        "执行力"
+      ],
+      "tool_keywords": [
+        "Excel",
+        "飞书"
+      ],
+      "jargon_terms": [
+        "SOP",
+        "工单"
+      ],
+      "notes": "Manual seed record for local schema validation and JD-backed evidence prototyping."
+    }
+  },
+  {
+    "id": "jd_005",
+    "company": "微光教育",
+    "role_title": "增长运营实习生",
+    "role_category": "运营",
+    "source_url": "manual://seed/jd_005",
+    "source_type": "manual_note",
+    "location": "不限",
+    "employment_type": "实习",
+    "raw_text": "负责报名路径分析、增长实验设计、数据复盘，与产品、运营或设计同学协作推进实习项目落地。要求具备指标意识、假设验证、结果复盘，能使用Excel、SQL完成基础整理和复盘。",
+    "responsibilities_text": "负责报名路径分析、增长实验设计、数据复盘，与产品、运营或设计同学协作推进实习项目落地。",
+    "requirements_text": "要求具备指标意识、假设验证、结果复盘，能使用Excel、SQL完成基础整理和复盘。",
+    "collected_at": "2026-05-28",
+    "annotation": {
+      "mapped_direction": "growth",
+      "secondary_directions": [
+        "campaign"
+      ],
+      "task_keywords": [
+        "报名路径分析",
+        "增长实验设计",
+        "数据复盘"
+      ],
+      "capability_keywords": [
+        "指标意识",
+        "假设验证",
+        "结果复盘"
+      ],
+      "tool_keywords": [
+        "Excel",
+        "SQL"
+      ],
+      "jargon_terms": [
+        "转化",
+        "漏斗"
+      ],
+      "notes": "Manual seed record for local schema validation and JD-backed evidence prototyping."
+    }
+  },
+  {
+    "id": "jd_006",
+    "company": "青柠工具",
+    "role_title": "数据产品实习生",
+    "role_category": "产品",
+    "source_url": "manual://seed/jd_006",
+    "source_type": "manual_note",
+    "location": "不限",
+    "employment_type": "实习",
+    "raw_text": "负责指标口径整理、看板需求、效果对比，与产品、运营或设计同学协作推进实习项目落地。要求具备表格能力、逻辑判断、业务理解，能使用SQL、Tableau完成基础整理和复盘。",
+    "responsibilities_text": "负责指标口径整理、看板需求、效果对比，与产品、运营或设计同学协作推进实习项目落地。",
+    "requirements_text": "要求具备表格能力、逻辑判断、业务理解，能使用SQL、Tableau完成基础整理和复盘。",
+    "collected_at": "2026-05-28",
+    "annotation": {
+      "mapped_direction": "growth",
+      "secondary_directions": [
+        "strategy"
+      ],
+      "task_keywords": [
+        "指标口径整理",
+        "看板需求",
+        "效果对比"
+      ],
+      "capability_keywords": [
+        "表格能力",
+        "逻辑判断",
+        "业务理解"
+      ],
+      "tool_keywords": [
+        "SQL",
+        "Tableau"
+      ],
+      "jargon_terms": [
+        "指标",
+        "留存"
+      ],
+      "notes": "Manual seed record for local schema validation and JD-backed evidence prototyping."
+    }
+  },
+  {
+    "id": "jd_007",
+    "company": "拾光内容",
+    "role_title": "内容运营实习生",
+    "role_category": "运营",
+    "source_url": "manual://seed/jd_007",
+    "source_type": "manual_note",
+    "location": "不限",
+    "employment_type": "实习",
+    "raw_text": "负责选题策划、标题优化、内容排期，与产品、运营或设计同学协作推进实习项目落地。要求具备表达能力、热点敏感、平台理解，能使用公众号后台、Excel完成基础整理和复盘。",
+    "responsibilities_text": "负责选题策划、标题优化、内容排期，与产品、运营或设计同学协作推进实习项目落地。",
+    "requirements_text": "要求具备表达能力、热点敏感、平台理解，能使用公众号后台、Excel完成基础整理和复盘。",
+    "collected_at": "2026-05-28",
+    "annotation": {
+      "mapped_direction": "content",
+      "secondary_directions": [
+        "growth"
+      ],
+      "task_keywords": [
+        "选题策划",
+        "标题优化",
+        "内容排期"
+      ],
+      "capability_keywords": [
+        "表达能力",
+        "热点敏感",
+        "平台理解"
+      ],
+      "tool_keywords": [
+        "公众号后台",
+        "Excel"
+      ],
+      "jargon_terms": [
+        "阅读量",
+        "选题"
+      ],
+      "notes": "Manual seed record for local schema validation and JD-backed evidence prototyping."
+    }
+  },
+  {
+    "id": "jd_008",
+    "company": "墨点校园",
+    "role_title": "新媒体运营实习生",
+    "role_category": "运营",
+    "source_url": "manual://seed/jd_008",
+    "source_type": "manual_note",
+    "location": "不限",
+    "employment_type": "实习",
+    "raw_text": "负责内容样稿撰写、评论反馈整理、内容数据复盘，与产品、运营或设计同学协作推进实习项目落地。要求具备内容结构、用户感知、复盘能力，能使用剪映、小红书完成基础整理和复盘。",
+    "responsibilities_text": "负责内容样稿撰写、评论反馈整理、内容数据复盘，与产品、运营或设计同学协作推进实习项目落地。",
+    "requirements_text": "要求具备内容结构、用户感知、复盘能力，能使用剪映、小红书完成基础整理和复盘。",
+    "collected_at": "2026-05-28",
+    "annotation": {
+      "mapped_direction": "content",
+      "secondary_directions": [
+        "community"
+      ],
+      "task_keywords": [
+        "内容样稿撰写",
+        "评论反馈整理",
+        "内容数据复盘"
+      ],
+      "capability_keywords": [
+        "内容结构",
+        "用户感知",
+        "复盘能力"
+      ],
+      "tool_keywords": [
+        "剪映",
+        "小红书"
+      ],
+      "jargon_terms": [
+        "互动率",
+        "复盘"
+      ],
+      "notes": "Manual seed record for local schema validation and JD-backed evidence prototyping."
+    }
+  },
+  {
+    "id": "jd_009",
+    "company": "跃动营销",
+    "role_title": "活动运营实习生",
+    "role_category": "运营",
+    "source_url": "manual://seed/jd_009",
+    "source_type": "manual_note",
+    "location": "不限",
+    "employment_type": "实习",
+    "raw_text": "负责活动策划、物料准备、活动复盘，与产品、运营或设计同学协作推进实习项目落地。要求具备执行力、协调能力、风险预案，能使用Excel、飞书完成基础整理和复盘。",
+    "responsibilities_text": "负责活动策划、物料准备、活动复盘，与产品、运营或设计同学协作推进实习项目落地。",
+    "requirements_text": "要求具备执行力、协调能力、风险预案，能使用Excel、飞书完成基础整理和复盘。",
+    "collected_at": "2026-05-28",
+    "annotation": {
+      "mapped_direction": "campaign",
+      "secondary_directions": [
+        "project"
+      ],
+      "task_keywords": [
+        "活动策划",
+        "物料准备",
+        "活动复盘"
+      ],
+      "capability_keywords": [
+        "执行力",
+        "协调能力",
+        "风险预案"
+      ],
+      "tool_keywords": [
+        "Excel",
+        "飞书"
+      ],
+      "jargon_terms": [
+        "转化",
+        "复盘"
+      ],
+      "notes": "Manual seed record for local schema validation and JD-backed evidence prototyping."
+    }
+  },
+  {
+    "id": "jd_010",
+    "company": "知行校园",
+    "role_title": "校园运营实习生",
+    "role_category": "运营",
+    "source_url": "manual://seed/jd_010",
+    "source_type": "manual_note",
+    "location": "不限",
+    "employment_type": "实习",
+    "raw_text": "负责报名提升、社群通知、现场执行，与产品、运营或设计同学协作推进实习项目落地。要求具备沟通能力、资源协调、结果意识，能使用微信群、问卷星完成基础整理和复盘。",
+    "responsibilities_text": "负责报名提升、社群通知、现场执行，与产品、运营或设计同学协作推进实习项目落地。",
+    "requirements_text": "要求具备沟通能力、资源协调、结果意识，能使用微信群、问卷星完成基础整理和复盘。",
+    "collected_at": "2026-05-28",
+    "annotation": {
+      "mapped_direction": "campaign",
+      "secondary_directions": [
+        "community"
+      ],
+      "task_keywords": [
+        "报名提升",
+        "社群通知",
+        "现场执行"
+      ],
+      "capability_keywords": [
+        "沟通能力",
+        "资源协调",
+        "结果意识"
+      ],
+      "tool_keywords": [
+        "微信群",
+        "问卷星"
+      ],
+      "jargon_terms": [
+        "报名",
+        "触达"
+      ],
+      "notes": "Manual seed record for local schema validation and JD-backed evidence prototyping."
+    }
+  },
+  {
+    "id": "jd_011",
+    "company": "邻里互助",
+    "role_title": "社群运营实习生",
+    "role_category": "运营",
+    "source_url": "manual://seed/jd_011",
+    "source_type": "manual_note",
+    "location": "不限",
+    "employment_type": "实习",
+    "raw_text": "负责社群维护、用户互动、用户召回，与产品、运营或设计同学协作推进实习项目落地。要求具备沟通耐心、氛围观察、机制设计，能使用企业微信、飞书完成基础整理和复盘。",
+    "responsibilities_text": "负责社群维护、用户互动、用户召回，与产品、运营或设计同学协作推进实习项目落地。",
+    "requirements_text": "要求具备沟通耐心、氛围观察、机制设计，能使用企业微信、飞书完成基础整理和复盘。",
+    "collected_at": "2026-05-28",
+    "annotation": {
+      "mapped_direction": "community",
+      "secondary_directions": [
+        "campaign"
+      ],
+      "task_keywords": [
+        "社群维护",
+        "用户互动",
+        "用户召回"
+      ],
+      "capability_keywords": [
+        "沟通耐心",
+        "氛围观察",
+        "机制设计"
+      ],
+      "tool_keywords": [
+        "企业微信",
+        "飞书"
+      ],
+      "jargon_terms": [
+        "留存",
+        "活跃"
+      ],
+      "notes": "Manual seed record for local schema validation and JD-backed evidence prototyping."
+    }
+  },
+  {
+    "id": "jd_012",
+    "company": "职芽成长",
+    "role_title": "用户运营实习生",
+    "role_category": "运营",
+    "source_url": "manual://seed/jd_012",
+    "source_type": "manual_note",
+    "location": "不限",
+    "employment_type": "实习",
+    "raw_text": "负责用户分层、活动通知、反馈收集，与产品、运营或设计同学协作推进实习项目落地。要求具备用户陪伴、共情能力、执行力，能使用CRM、Excel完成基础整理和复盘。",
+    "responsibilities_text": "负责用户分层、活动通知、反馈收集，与产品、运营或设计同学协作推进实习项目落地。",
+    "requirements_text": "要求具备用户陪伴、共情能力、执行力，能使用CRM、Excel完成基础整理和复盘。",
+    "collected_at": "2026-05-28",
+    "annotation": {
+      "mapped_direction": "community",
+      "secondary_directions": [
+        "research"
+      ],
+      "task_keywords": [
+        "用户分层",
+        "活动通知",
+        "反馈收集"
+      ],
+      "capability_keywords": [
+        "用户陪伴",
+        "共情能力",
+        "执行力"
+      ],
+      "tool_keywords": [
+        "CRM",
+        "Excel"
+      ],
+      "jargon_terms": [
+        "私域",
+        "召回"
+      ],
+      "notes": "Manual seed record for local schema validation and JD-backed evidence prototyping."
+    }
+  },
+  {
+    "id": "jd_013",
+    "company": "洞见咨询",
+    "role_title": "用户研究实习生",
+    "role_category": "研究",
+    "source_url": "manual://seed/jd_013",
+    "source_type": "manual_note",
+    "location": "不限",
+    "employment_type": "实习",
+    "raw_text": "负责用户访谈、问卷整理、洞察报告，与产品、运营或设计同学协作推进实习项目落地。要求具备提问能力、归纳能力、客观记录，能使用问卷星、Notion完成基础整理和复盘。",
+    "responsibilities_text": "负责用户访谈、问卷整理、洞察报告，与产品、运营或设计同学协作推进实习项目落地。",
+    "requirements_text": "要求具备提问能力、归纳能力、客观记录，能使用问卷星、Notion完成基础整理和复盘。",
+    "collected_at": "2026-05-28",
+    "annotation": {
+      "mapped_direction": "research",
+      "secondary_directions": [
+        "ux"
+      ],
+      "task_keywords": [
+        "用户访谈",
+        "问卷整理",
+        "洞察报告"
+      ],
+      "capability_keywords": [
+        "提问能力",
+        "归纳能力",
+        "客观记录"
+      ],
+      "tool_keywords": [
+        "问卷星",
+        "Notion"
+      ],
+      "jargon_terms": [
+        "访谈",
+        "洞察"
+      ],
+      "notes": "Manual seed record for local schema validation and JD-backed evidence prototyping."
+    }
+  },
+  {
+    "id": "jd_014",
+    "company": "蓝桥产品实验室",
+    "role_title": "产品调研实习生",
+    "role_category": "产品",
+    "source_url": "manual://seed/jd_014",
+    "source_type": "manual_note",
+    "location": "不限",
+    "employment_type": "实习",
+    "raw_text": "负责竞品调研、反馈归类、需求验证，与产品、运营或设计同学协作推进实习项目落地。要求具备信息整合、用户视角、结构化表达，能使用Excel、Figma完成基础整理和复盘。",
+    "responsibilities_text": "负责竞品调研、反馈归类、需求验证，与产品、运营或设计同学协作推进实习项目落地。",
+    "requirements_text": "要求具备信息整合、用户视角、结构化表达，能使用Excel、Figma完成基础整理和复盘。",
+    "collected_at": "2026-05-28",
+    "annotation": {
+      "mapped_direction": "research",
+      "secondary_directions": [
+        "strategy"
+      ],
+      "task_keywords": [
+        "竞品调研",
+        "反馈归类",
+        "需求验证"
+      ],
+      "capability_keywords": [
+        "信息整合",
+        "用户视角",
+        "结构化表达"
+      ],
+      "tool_keywords": [
+        "Excel",
+        "Figma"
+      ],
+      "jargon_terms": [
+        "需求",
+        "竞品"
+      ],
+      "notes": "Manual seed record for local schema validation and JD-backed evidence prototyping."
+    }
+  },
+  {
+    "id": "jd_015",
+    "company": "远山商业",
+    "role_title": "策略运营实习生",
+    "role_category": "运营",
+    "source_url": "manual://seed/jd_015",
+    "source_type": "manual_note",
+    "location": "不限",
+    "employment_type": "实习",
+    "raw_text": "负责竞品分析、策略拆解、业务复盘，与产品、运营或设计同学协作推进实习项目落地。要求具备逻辑判断、全局视角、数据意识，能使用Excel、PPT完成基础整理和复盘。",
+    "responsibilities_text": "负责竞品分析、策略拆解、业务复盘，与产品、运营或设计同学协作推进实习项目落地。",
+    "requirements_text": "要求具备逻辑判断、全局视角、数据意识，能使用Excel、PPT完成基础整理和复盘。",
+    "collected_at": "2026-05-28",
+    "annotation": {
+      "mapped_direction": "strategy",
+      "secondary_directions": [
+        "growth"
+      ],
+      "task_keywords": [
+        "竞品分析",
+        "策略拆解",
+        "业务复盘"
+      ],
+      "capability_keywords": [
+        "逻辑判断",
+        "全局视角",
+        "数据意识"
+      ],
+      "tool_keywords": [
+        "Excel",
+        "PPT"
+      ],
+      "jargon_terms": [
+        "优先级",
+        "商业模式"
+      ],
+      "notes": "Manual seed record for local schema validation and JD-backed evidence prototyping."
+    }
+  },
+  {
+    "id": "jd_016",
+    "company": "南舟科技",
+    "role_title": "商业分析实习生",
+    "role_category": "分析",
+    "source_url": "manual://seed/jd_016",
+    "source_type": "manual_note",
+    "location": "不限",
+    "employment_type": "实习",
+    "raw_text": "负责行业信息整理、优先级判断、经营数据分析，与产品、运营或设计同学协作推进实习项目落地。要求具备信息整合、结构化表达、问题拆解，能使用Excel、SQL完成基础整理和复盘。",
+    "responsibilities_text": "负责行业信息整理、优先级判断、经营数据分析，与产品、运营或设计同学协作推进实习项目落地。",
+    "requirements_text": "要求具备信息整合、结构化表达、问题拆解，能使用Excel、SQL完成基础整理和复盘。",
+    "collected_at": "2026-05-28",
+    "annotation": {
+      "mapped_direction": "strategy",
+      "secondary_directions": [
+        "process"
+      ],
+      "task_keywords": [
+        "行业信息整理",
+        "优先级判断",
+        "经营数据分析"
+      ],
+      "capability_keywords": [
+        "信息整合",
+        "结构化表达",
+        "问题拆解"
+      ],
+      "tool_keywords": [
+        "Excel",
+        "SQL"
+      ],
+      "jargon_terms": [
+        "ROI",
+        "指标"
+      ],
+      "notes": "Manual seed record for local schema validation and JD-backed evidence prototyping."
+    }
+  },
+  {
+    "id": "jd_017",
+    "company": "合创云",
+    "role_title": "项目运营实习生",
+    "role_category": "运营",
+    "source_url": "manual://seed/jd_017",
+    "source_type": "manual_note",
+    "location": "不限",
+    "employment_type": "实习",
+    "raw_text": "负责项目排期、进度跟进、跨方协调，与产品、运营或设计同学协作推进实习项目落地。要求具备责任心、推进力、沟通协调，能使用飞书、Trello完成基础整理和复盘。",
+    "responsibilities_text": "负责项目排期、进度跟进、跨方协调，与产品、运营或设计同学协作推进实习项目落地。",
+    "requirements_text": "要求具备责任心、推进力、沟通协调，能使用飞书、Trello完成基础整理和复盘。",
+    "collected_at": "2026-05-28",
+    "annotation": {
+      "mapped_direction": "project",
+      "secondary_directions": [
+        "campaign"
+      ],
+      "task_keywords": [
+        "项目排期",
+        "进度跟进",
+        "跨方协调"
+      ],
+      "capability_keywords": [
+        "责任心",
+        "推进力",
+        "沟通协调"
+      ],
+      "tool_keywords": [
+        "飞书",
+        "Trello"
+      ],
+      "jargon_terms": [
+        "排期",
+        "里程碑"
+      ],
+      "notes": "Manual seed record for local schema validation and JD-backed evidence prototyping."
+    }
+  },
+  {
+    "id": "jd_018",
+    "company": "启明产品组",
+    "role_title": "产品运营实习生",
+    "role_category": "运营",
+    "source_url": "manual://seed/jd_018",
+    "source_type": "manual_note",
+    "location": "不限",
+    "employment_type": "实习",
+    "raw_text": "负责需求跟进、风险预案、交付验收，与产品、运营或设计同学协作推进实习项目落地。要求具备节奏管理、规则表达、执行力，能使用Jira、飞书完成基础整理和复盘。",
+    "responsibilities_text": "负责需求跟进、风险预案、交付验收，与产品、运营或设计同学协作推进实习项目落地。",
+    "requirements_text": "要求具备节奏管理、规则表达、执行力，能使用Jira、飞书完成基础整理和复盘。",
+    "collected_at": "2026-05-28",
+    "annotation": {
+      "mapped_direction": "project",
+      "secondary_directions": [
+        "process"
+      ],
+      "task_keywords": [
+        "需求跟进",
+        "风险预案",
+        "交付验收"
+      ],
+      "capability_keywords": [
+        "节奏管理",
+        "规则表达",
+        "执行力"
+      ],
+      "tool_keywords": [
+        "Jira",
+        "飞书"
+      ],
+      "jargon_terms": [
+        "验收",
+        "SOP"
+      ],
+      "notes": "Manual seed record for local schema validation and JD-backed evidence prototyping."
+    }
+  },
+  {
+    "id": "jd_019",
+    "company": "橙盒电商",
+    "role_title": "会员产品实习生",
+    "role_category": "产品",
+    "source_url": "manual://seed/jd_019",
+    "source_type": "manual_note",
+    "location": "不限",
+    "employment_type": "实习",
+    "raw_text": "负责会员路径优化、用户反馈整理、功能验收，与产品、运营或设计同学协作推进实习项目落地。要求具备用户视角、沟通能力、细节观察，能使用Figma、Excel完成基础整理和复盘。",
+    "responsibilities_text": "负责会员路径优化、用户反馈整理、功能验收，与产品、运营或设计同学协作推进实习项目落地。",
+    "requirements_text": "要求具备用户视角、沟通能力、细节观察，能使用Figma、Excel完成基础整理和复盘。",
+    "collected_at": "2026-05-28",
+    "annotation": {
+      "mapped_direction": "ux",
+      "secondary_directions": [
+        "community"
+      ],
+      "task_keywords": [
+        "会员路径优化",
+        "用户反馈整理",
+        "功能验收"
+      ],
+      "capability_keywords": [
+        "用户视角",
+        "沟通能力",
+        "细节观察"
+      ],
+      "tool_keywords": [
+        "Figma",
+        "Excel"
+      ],
+      "jargon_terms": [
+        "会员",
+        "体验"
+      ],
+      "notes": "Manual seed record for local schema validation and JD-backed evidence prototyping."
+    }
+  },
+  {
+    "id": "jd_020",
+    "company": "海盐社区",
+    "role_title": "私域运营实习生",
+    "role_category": "运营",
+    "source_url": "manual://seed/jd_020",
+    "source_type": "manual_note",
+    "location": "不限",
+    "employment_type": "实习",
+    "raw_text": "负责用户召回、社群维护、数据复盘，与产品、运营或设计同学协作推进实习项目落地。要求具备沟通耐心、指标意识、机制设计，能使用企业微信、Excel完成基础整理和复盘。",
+    "responsibilities_text": "负责用户召回、社群维护、数据复盘，与产品、运营或设计同学协作推进实习项目落地。",
+    "requirements_text": "要求具备沟通耐心、指标意识、机制设计，能使用企业微信、Excel完成基础整理和复盘。",
+    "collected_at": "2026-05-28",
+    "annotation": {
+      "mapped_direction": "community",
+      "secondary_directions": [
+        "growth"
+      ],
+      "task_keywords": [
+        "用户召回",
+        "社群维护",
+        "数据复盘"
+      ],
+      "capability_keywords": [
+        "沟通耐心",
+        "指标意识",
+        "机制设计"
+      ],
+      "tool_keywords": [
+        "企业微信",
+        "Excel"
+      ],
+      "jargon_terms": [
+        "私域",
+        "留存"
+      ],
+      "notes": "Manual seed record for local schema validation and JD-backed evidence prototyping."
+    }
+  },
+  {
+    "id": "jd_021",
+    "company": "点石增长",
+    "role_title": "商业化产品实习生",
+    "role_category": "产品",
+    "source_url": "manual://seed/jd_021",
+    "source_type": "manual_note",
+    "location": "不限",
+    "employment_type": "实习",
+    "raw_text": "负责商业化路径分析、实验跟进、效果对比，与产品、运营或设计同学协作推进实习项目落地。要求具备假设验证、业务理解、结果复盘，能使用SQL、Figma完成基础整理和复盘。",
+    "responsibilities_text": "负责商业化路径分析、实验跟进、效果对比，与产品、运营或设计同学协作推进实习项目落地。",
+    "requirements_text": "要求具备假设验证、业务理解、结果复盘，能使用SQL、Figma完成基础整理和复盘。",
+    "collected_at": "2026-05-28",
+    "annotation": {
+      "mapped_direction": "growth",
+      "secondary_directions": [
+        "strategy"
+      ],
+      "task_keywords": [
+        "商业化路径分析",
+        "实验跟进",
+        "效果对比"
+      ],
+      "capability_keywords": [
+        "假设验证",
+        "业务理解",
+        "结果复盘"
+      ],
+      "tool_keywords": [
+        "SQL",
+        "Figma"
+      ],
+      "jargon_terms": [
+        "转化",
+        "商业化"
+      ],
+      "notes": "Manual seed record for local schema validation and JD-backed evidence prototyping."
+    }
+  },
+  {
+    "id": "jd_022",
+    "company": "风铃传媒",
+    "role_title": "账号运营实习生",
+    "role_category": "运营",
+    "source_url": "manual://seed/jd_022",
+    "source_type": "manual_note",
+    "location": "不限",
+    "employment_type": "实习",
+    "raw_text": "负责内容排期、活动文案、数据复盘，与产品、运营或设计同学协作推进实习项目落地。要求具备表达能力、执行力、平台理解，能使用小红书、Excel完成基础整理和复盘。",
+    "responsibilities_text": "负责内容排期、活动文案、数据复盘，与产品、运营或设计同学协作推进实习项目落地。",
+    "requirements_text": "要求具备表达能力、执行力、平台理解，能使用小红书、Excel完成基础整理和复盘。",
+    "collected_at": "2026-05-28",
+    "annotation": {
+      "mapped_direction": "content",
+      "secondary_directions": [
+        "campaign"
+      ],
+      "task_keywords": [
+        "内容排期",
+        "活动文案",
+        "数据复盘"
+      ],
+      "capability_keywords": [
+        "表达能力",
+        "执行力",
+        "平台理解"
+      ],
+      "tool_keywords": [
+        "小红书",
+        "Excel"
+      ],
+      "jargon_terms": [
+        "曝光",
+        "转化"
+      ],
+      "notes": "Manual seed record for local schema validation and JD-backed evidence prototyping."
+    }
+  },
+  {
+    "id": "jd_023",
+    "company": "明策平台",
+    "role_title": "平台产品实习生",
+    "role_category": "产品",
+    "source_url": "manual://seed/jd_023",
+    "source_type": "manual_note",
+    "location": "不限",
+    "employment_type": "实习",
+    "raw_text": "负责权限规则梳理、后台页面设计、异常处理，与产品、运营或设计同学协作推进实习项目落地。要求具备流程意识、逻辑判断、原型表达，能使用Axure、XMind完成基础整理和复盘。",
+    "responsibilities_text": "负责权限规则梳理、后台页面设计、异常处理，与产品、运营或设计同学协作推进实习项目落地。",
+    "requirements_text": "要求具备流程意识、逻辑判断、原型表达，能使用Axure、XMind完成基础整理和复盘。",
+    "collected_at": "2026-05-28",
+    "annotation": {
+      "mapped_direction": "process",
+      "secondary_directions": [
+        "strategy"
+      ],
+      "task_keywords": [
+        "权限规则梳理",
+        "后台页面设计",
+        "异常处理"
+      ],
+      "capability_keywords": [
+        "流程意识",
+        "逻辑判断",
+        "原型表达"
+      ],
+      "tool_keywords": [
+        "Axure",
+        "XMind"
+      ],
+      "jargon_terms": [
+        "权限",
+        "流程"
+      ],
+      "notes": "Manual seed record for local schema validation and JD-backed evidence prototyping."
+    }
+  },
+  {
+    "id": "jd_024",
+    "company": "同路校园",
+    "role_title": "营销运营实习生",
+    "role_category": "运营",
+    "source_url": "manual://seed/jd_024",
+    "source_type": "manual_note",
+    "location": "不限",
+    "employment_type": "实习",
+    "raw_text": "负责活动策划、宣传节奏、报名转化，与产品、运营或设计同学协作推进实习项目落地。要求具备转化意识、内容表达、资源协调，能使用问卷星、飞书完成基础整理和复盘。",
+    "responsibilities_text": "负责活动策划、宣传节奏、报名转化，与产品、运营或设计同学协作推进实习项目落地。",
+    "requirements_text": "要求具备转化意识、内容表达、资源协调，能使用问卷星、飞书完成基础整理和复盘。",
+    "collected_at": "2026-05-28",
+    "annotation": {
+      "mapped_direction": "campaign",
+      "secondary_directions": [
+        "content"
+      ],
+      "task_keywords": [
+        "活动策划",
+        "宣传节奏",
+        "报名转化"
+      ],
+      "capability_keywords": [
+        "转化意识",
+        "内容表达",
+        "资源协调"
+      ],
+      "tool_keywords": [
+        "问卷星",
+        "飞书"
+      ],
+      "jargon_terms": [
+        "触达",
+        "报名"
+      ],
+      "notes": "Manual seed record for local schema validation and JD-backed evidence prototyping."
+    }
+  }
+]
