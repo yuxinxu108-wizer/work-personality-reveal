@@ -146,9 +146,9 @@ def ai_explain_placeholder() -> dict[str, object]:
     }
 
 
-def _read_database(function: Any, *args: Any) -> Any:
+def _read_database(function: Any, *args: Any, **kwargs: Any) -> Any:
     try:
-        return function(*args)
+        return function(*args, **kwargs)
     except sqlite3.Error as exc:
         raise HTTPException(
             status_code=503,

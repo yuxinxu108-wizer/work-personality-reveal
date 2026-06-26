@@ -17,6 +17,7 @@ def annotation(index, *, source_quality="medium", collected_at="2026-06-25"):
         "source_type": "recruiting_platform",
         "source_quality": source_quality,
         "collected_at": collected_at,
+        "review_level": "manual_reviewed",
         "task_keywords": ["用户研究", "数据分析", "项目推进"],
         "capability_keywords": ["结构化思维", "沟通协作", "产品思维"],
         "tool_keywords": ["Excel"],
@@ -51,6 +52,22 @@ class EvidenceConfidenceTest(unittest.TestCase):
         self.assertEqual(summary["evidence_confidence"]["level"], "high")
         self.assertEqual(summary["source_quality_summary"], {"high": 30})
         self.assertEqual(summary["latest_collected_at"], "2026-06-25")
+
+    def test_review_level_summary_counts_strong_and_rule_generated_records(self):
+        records = [
+            annotation(1),
+            {**annotation(2), "review_level": "rule_generated"},
+            {**annotation(3), "review_level": "spot_checked"},
+        ]
+
+        summary = build_evidence_summary(FakeRepository(records), "strategy")
+
+        self.assertEqual(summary["review_level_summary"], {
+            "manual_reviewed": 1,
+            "rule_generated": 1,
+            "spot_checked": 1,
+        })
+        self.assertEqual(summary["strong_review_jd_count"], 2)
 
 
 if __name__ == "__main__":

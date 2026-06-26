@@ -52,9 +52,9 @@ def import_reviewed_jds(db_path: Path | str, csv_path: Path | str) -> int:
                   id, jd_id, ai_annotation_id, mapped_direction,
                   secondary_directions, task_keywords, capability_keywords,
                   tool_keywords, jargon_terms, notes, review_status,
-                  review_notes, reviewed_by, reviewed_at
+                  review_level, review_notes, reviewed_by, reviewed_at
                 )
-                VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+                VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
                 ON CONFLICT(id) DO UPDATE SET
                   mapped_direction = excluded.mapped_direction,
                   secondary_directions = excluded.secondary_directions,
@@ -64,6 +64,7 @@ def import_reviewed_jds(db_path: Path | str, csv_path: Path | str) -> int:
                   jargon_terms = excluded.jargon_terms,
                   notes = excluded.notes,
                   review_status = excluded.review_status,
+                  review_level = excluded.review_level,
                   review_notes = excluded.review_notes,
                   reviewed_by = excluded.reviewed_by,
                   reviewed_at = excluded.reviewed_at
@@ -80,6 +81,7 @@ def import_reviewed_jds(db_path: Path | str, csv_path: Path | str) -> int:
                     to_json(row["jargon_terms"]),
                     row["review_notes"],
                     row["review_status"],
+                    row["review_level"],
                     row["review_notes"],
                     row["reviewed_by"],
                     row["reviewed_at"],

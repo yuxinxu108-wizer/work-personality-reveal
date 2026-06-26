@@ -104,6 +104,12 @@ Run backend tests:
 npm run backend:test
 ```
 
+Build the product data quality report:
+
+```bash
+npm run data:quality
+```
+
 Run the full local verification suite:
 
 ```bash

@@ -44,6 +44,9 @@ CREATE TABLE IF NOT EXISTS jd_annotations (
   review_status TEXT NOT NULL DEFAULT 'approved' CHECK (
     review_status IN ('approved', 'needs_review', 'rejected')
   ),
+  review_level TEXT NOT NULL DEFAULT 'manual_reviewed' CHECK (
+    review_level IN ('rule_generated', 'manual_reviewed', 'spot_checked')
+  ),
   review_notes TEXT NOT NULL DEFAULT '',
   reviewed_by TEXT NOT NULL DEFAULT '',
   reviewed_at TEXT NOT NULL DEFAULT ''
@@ -157,6 +160,9 @@ MIGRATED_TABLES_SQL = {
       review_status TEXT NOT NULL DEFAULT 'approved' CHECK (
         review_status IN ('approved', 'needs_review', 'rejected')
       ),
+      review_level TEXT NOT NULL DEFAULT 'manual_reviewed' CHECK (
+        review_level IN ('rule_generated', 'manual_reviewed', 'spot_checked')
+      ),
       review_notes TEXT NOT NULL DEFAULT '',
       reviewed_by TEXT NOT NULL DEFAULT '',
       reviewed_at TEXT NOT NULL DEFAULT ''
@@ -191,6 +197,7 @@ def initialize_database(db_path: Path | str) -> None:
     with connect(path) as conn:
         conn.executescript(SCHEMA_SQL)
         _migrate_pilot_columns(conn)
+        _migrate_review_levels(conn)
         _migrate_jd_sources_source_type_check(conn)
         _migrate_jd_annotations_review_status_check(conn)
         _migrate_direction_foreign_keys(conn)
@@ -260,6 +267,15 @@ def _migrate_pilot_columns(conn: sqlite3.Connection) -> None:
     _add_column_if_missing(
         conn,
         "jd_annotations",
+        "review_level",
+        """
+        review_level TEXT NOT NULL DEFAULT 'manual_reviewed'
+        CHECK (review_level IN ('rule_generated', 'manual_reviewed', 'spot_checked'))
+        """,
+    )
+    _add_column_if_missing(
+        conn,
+        "jd_annotations",
         "reviewed_by",
         "reviewed_by TEXT NOT NULL DEFAULT ''",
     )
@@ -286,6 +302,29 @@ def _migrate_pilot_columns(conn: sqlite3.Connection) -> None:
         "assessment_runs",
         "valid_answer_count",
         "valid_answer_count INTEGER NOT NULL DEFAULT 0",
+    )
+
+
+def _migrate_review_levels(conn: sqlite3.Connection) -> None:
+    if not _table_exists(conn, "jd_annotations"):
+        return
+    columns = {
+        row["name"]
+        for row in conn.execute("PRAGMA table_info(jd_annotations)")
+    }
+    required_columns = {"review_level", "reviewed_by", "review_notes"}
+    if not required_columns.issubset(columns):
+        return
+    conn.execute(
+        """
+        UPDATE jd_annotations
+        SET review_level = 'rule_generated'
+        WHERE review_level = 'manual_reviewed'
+          AND (
+            reviewed_by = 'codex_rule_review'
+            OR review_notes LIKE '%规则生成%'
+          )
+        """
     )
 
 

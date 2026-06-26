@@ -8,6 +8,7 @@
     "db:seed": "PYTHONPATH=. .venv/bin/python scripts/import_jds.py --db data/app.db --seed-dir data/seeds",
     "backend": "PYTHONPATH=. .venv/bin/uvicorn backend.app.main:app --host 127.0.0.1 --port 8000",
     "backend:test": "bash scripts/run_backend_tests.sh",
+    "data:quality": "PYTHONPATH=. python3 scripts/data_quality_report.py --db data/app.db",
     "test": "node --test",
     "frontend": "python3 -m http.server 5174 --bind 127.0.0.1 --directory frontend",
     "verify": "npm test && npm run backend:test"

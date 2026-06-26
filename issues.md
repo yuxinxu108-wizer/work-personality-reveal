@@ -84,6 +84,8 @@ None - can start immediately
 
 ## Issue 4: 建立 JD 审核状态和抽查闭环
 
+状态：已完成第一版。JD annotation 现在支持 `review_level`，可区分 `rule_generated`、`manual_reviewed`、`spot_checked`；旧的 `codex_rule_review` 数据会被自动识别为规则生成。证据 summary 会返回审核等级分布和强审核样本数量。
+
 ## What to build
 
 JD annotation 需要区分规则生成、人工审核、抽查通过等状态。结果页强证据只使用达到正式标准的 JD，维护者可以看到哪些数据还需要抽查。
@@ -209,6 +211,8 @@ None - can start immediately
 ---
 
 ## Issue 10: 建立产品数据质量看板
+
+状态：已完成第一版。已添加 `npm run data:quality`，可输出每个方向的正式 JD 数、强审核样本数、审核等级分布、来源质量、最近采集时间和覆盖状态。
 
 ## What to build
 

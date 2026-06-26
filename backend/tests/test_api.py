@@ -366,6 +366,16 @@ def test_repository_loads_directions_questions_and_evidence(tmp_path: Path):
         "hard_requirements": [],
         "resume_keywords": [],
         "source_type_summary": {},
+        "source_quality_summary": {},
+        "review_level_summary": {},
+        "strong_review_jd_count": 0,
+        "latest_collected_at": "",
+        "evidence_confidence": {
+            "level": "none",
+            "sample_count": 0,
+            "min_recommended_jd_count": 30,
+            "message": "当前方向暂无可用于展示的正式 JD 证据。",
+        },
     }
 
 
@@ -388,6 +398,16 @@ def test_evidence_summary_handles_unknown_direction(tmp_path: Path):
         "hard_requirements": [],
         "resume_keywords": [],
         "source_type_summary": {},
+        "source_quality_summary": {},
+        "review_level_summary": {},
+        "strong_review_jd_count": 0,
+        "latest_collected_at": "",
+        "evidence_confidence": {
+            "level": "none",
+            "sample_count": 0,
+            "min_recommended_jd_count": 30,
+            "message": "当前方向暂无可用于展示的正式 JD 证据。",
+        },
     }
 
 

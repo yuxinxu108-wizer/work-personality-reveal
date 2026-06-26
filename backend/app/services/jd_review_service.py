@@ -33,6 +33,7 @@ REVIEW_COLUMNS = [
 ]
 
 REVIEW_STATUSES = {"approved", "needs_review", "rejected"}
+REVIEW_LEVELS = {"rule_generated", "manual_reviewed", "spot_checked"}
 
 DIRECTION_KEYS = {
     "ux",
@@ -90,6 +91,14 @@ def validate_review_row(row: dict[str, str], *, row_number: int) -> dict[str, An
 
     reviewed_at = row["reviewed_at"].strip()
     reviewed_by = row["reviewed_by"].strip()
+    review_notes = row["review_notes"].strip()
+    review_level = infer_review_level(
+        row.get("review_level", ""),
+        reviewed_by=reviewed_by,
+        review_notes=review_notes,
+    )
+    if review_level not in REVIEW_LEVELS:
+        raise ValueError(f"Review row {row_number} invalid review_level: {review_level}")
     if status == "approved" and not reviewed_by:
         raise ValueError(f"Review row {row_number} approved records need reviewed_by")
     if status == "approved" and not reviewed_at:
@@ -112,7 +121,22 @@ def validate_review_row(row: dict[str, str], *, row_number: int) -> dict[str, An
         "tool_keywords": split_pipe_list(row["reviewed_tool_keywords"]),
         "jargon_terms": split_pipe_list(row["reviewed_jargon_terms"]),
         "review_status": status,
-        "review_notes": row["review_notes"].strip(),
+        "review_level": review_level,
+        "review_notes": review_notes,
         "reviewed_by": reviewed_by,
         "reviewed_at": reviewed_at,
     }
+
+
+def infer_review_level(
+    explicit_value: str,
+    *,
+    reviewed_by: str,
+    review_notes: str,
+) -> str:
+    explicit_value = explicit_value.strip()
+    if explicit_value:
+        return explicit_value
+    if reviewed_by == "codex_rule_review" or "规则生成" in review_notes:
+        return "rule_generated"
+    return "manual_reviewed"

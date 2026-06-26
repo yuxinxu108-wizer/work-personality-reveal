@@ -85,6 +85,16 @@ def build_evidence_summary(
     source_quality_counts = Counter(
         annotation["source_quality"] for annotation in annotations
     )
+    review_level_counts = Counter(
+        annotation.get("review_level", "manual_reviewed")
+        for annotation in annotations
+    )
+    strong_review_jd_count = sum(
+        1
+        for annotation in annotations
+        if annotation.get("review_level", "manual_reviewed")
+        in {"manual_reviewed", "spot_checked"}
+    )
     collected_dates = [
         annotation["collected_at"]
         for annotation in annotations
@@ -109,6 +119,8 @@ def build_evidence_summary(
         "resume_keywords": most_common(capability_values),
         "source_type_summary": dict(source_counts),
         "source_quality_summary": dict(source_quality_counts),
+        "review_level_summary": dict(review_level_counts),
+        "strong_review_jd_count": strong_review_jd_count,
         "latest_collected_at": max(collected_dates) if collected_dates else "",
         "evidence_confidence": build_evidence_confidence(jd_count),
     }

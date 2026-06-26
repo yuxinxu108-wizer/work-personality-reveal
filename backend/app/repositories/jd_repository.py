@@ -88,6 +88,7 @@ class JDRepository:
         direction_key: str,
         *,
         formal_only: bool = True,
+        strong_review_only: bool = False,
     ) -> list[dict[str, Any]]:
         formal_filter = ""
         params: tuple[Any, ...] = (direction_key,)
@@ -104,6 +105,10 @@ class JDRepository:
                   LIMIT 1
                 )
             """
+            if strong_review_only:
+                formal_filter += """
+                AND ja.review_level IN ('manual_reviewed', 'spot_checked')
+                """
 
         with connect(self.db_path) as conn:
             rows = conn.execute(
@@ -128,6 +133,7 @@ class JDRepository:
                 "source_quality": row["source_quality"],
                 "collected_at": row["collected_at"],
                 "review_status": row["review_status"],
+                "review_level": row["review_level"],
                 "task_keywords": from_json(row["task_keywords"]),
                 "capability_keywords": from_json(row["capability_keywords"]),
                 "tool_keywords": from_json(row["tool_keywords"]),
