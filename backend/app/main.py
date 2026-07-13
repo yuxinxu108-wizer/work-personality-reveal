@@ -8,6 +8,7 @@ from fastapi.middleware.cors import CORSMiddleware
 
 from backend.app.repositories.jd_repository import JDRepository
 from backend.app.schemas import AssessmentSubmitRequest
+from backend.app.services.action_plan_service import build_action_plan
 from backend.app.services.assessment_service import build_assessment_result
 from backend.app.services.evidence_service import build_evidence_summary
 
@@ -100,6 +101,7 @@ def submit_assessment(request: AssessmentSubmitRequest) -> dict[str, Any]:
         repository,
         selected["main_direction"],
     )
+    action_plan = build_action_plan(main_direction, support_direction, evidence)
     assessment_run_id = _read_database(
         repository.save_assessment_run,
         answers=request.answers,
@@ -126,7 +128,7 @@ def submit_assessment(request: AssessmentSubmitRequest) -> dict[str, Any]:
                 "用一个小项目证明你能完成这些任务。",
                 "把项目表达成岗位关键词和可验证结果。",
             ],
-            "action_plan": [],
+            "action_plan": action_plan,
             "portfolio_suggestion": main_direction["portfolio_guidance"],
         },
         "evidence": evidence,

@@ -7,6 +7,7 @@ let currentIndex = 0;
 let answersByQuestionId = {};
 let latestResult = null;
 let advanceTimer = null;
+const ADVANCE_DELAY_MS = 900;
 
 const screens = {
   home: document.getElementById("home"),
@@ -20,6 +21,7 @@ const progressBar = document.getElementById("progressBar");
 const questionText = document.getElementById("questionText");
 const optionsList = document.getElementById("optionsList");
 const prevBtn = document.getElementById("prevBtn");
+const nextBtn = document.getElementById("nextBtn");
 
 function showScreen(name) {
   Object.values(screens).forEach((screen) => {
@@ -57,6 +59,8 @@ function renderQuestion() {
   progressBar.style.width = `${((currentIndex + 1) / questions.length) * 100}%`;
   questionText.textContent = question.text;
   prevBtn.disabled = currentIndex === 0;
+  nextBtn.disabled = selectedAnswer === undefined;
+  nextBtn.textContent = currentIndex === questions.length - 1 ? "查看结果" : "下一题";
   clear(optionsList);
 
   question.options.forEach((option, optionIndex) => {
@@ -74,15 +78,19 @@ function selectAnswer(questionId, optionIndex) {
   clearAdvanceTimer();
   answersByQuestionId[questionId] = optionIndex;
   renderQuestion();
-  advanceTimer = window.setTimeout(async () => {
-    advanceTimer = null;
-    if (currentIndex < questions.length - 1) {
-      currentIndex += 1;
-      renderQuestion();
-      return;
-    }
-    await showLoadingThenResult();
-  }, 180);
+  advanceTimer = window.setTimeout(advanceToNext, ADVANCE_DELAY_MS);
+}
+
+async function advanceToNext() {
+  clearAdvanceTimer();
+  const question = questions[currentIndex];
+  if (!question || answersByQuestionId[question.id] === undefined) return;
+  if (currentIndex < questions.length - 1) {
+    currentIndex += 1;
+    renderQuestion();
+    return;
+  }
+  await showLoadingThenResult();
 }
 
 async function showLoadingThenResult() {
@@ -208,14 +216,58 @@ function renderActionPlan(plan) {
   panel.hidden = false;
   plan.forEach((day, index) => {
     const item = document.createElement("article");
-    const title = document.createElement("h3");
-    const body = document.createElement("p");
+    const toggle = document.createElement("button");
+    const label = document.createElement("strong");
+    const title = document.createElement("span");
+    const detail = document.createElement("div");
     item.className = "day-item";
-    title.textContent = day.label || `Day ${index + 1}`;
-    body.textContent = day.title || day.text || "";
-    item.append(title, body);
+    toggle.type = "button";
+    toggle.className = "day-toggle";
+    toggle.setAttribute("aria-expanded", index === 0 ? "true" : "false");
+    label.textContent = day.label || `Day ${index + 1}`;
+    title.textContent = day.title || day.text || "";
+    detail.className = "day-detail";
+    detail.hidden = index !== 0;
+    renderActionPlanDetail(detail, day);
+    toggle.append(label, title);
+    toggle.addEventListener("click", () => {
+      const expanded = toggle.getAttribute("aria-expanded") === "true";
+      toggle.setAttribute("aria-expanded", expanded ? "false" : "true");
+      detail.hidden = expanded;
+    });
+    item.append(toggle, detail);
     container.appendChild(item);
   });
+}
+
+function renderActionPlanDetail(container, day) {
+  appendField(container, "目标", day.goal);
+  if (Array.isArray(day.tasks) && day.tasks.length) {
+    const list = document.createElement("ul");
+    day.tasks.forEach((task) => {
+      const item = document.createElement("li");
+      item.textContent = task;
+      list.appendChild(item);
+    });
+    container.appendChild(list);
+  }
+  appendField(container, "产出", day.deliverable);
+  appendField(container, "简历表达", day.resume_sentence);
+  if (Array.isArray(day.jd_keywords) && day.jd_keywords.length) {
+    const chips = document.createElement("div");
+    chips.className = "keyword-list day-keywords";
+    renderChips(chips, day.jd_keywords);
+    container.appendChild(chips);
+  }
+}
+
+function appendField(container, label, value) {
+  if (!value) return;
+  const paragraph = document.createElement("p");
+  const strong = document.createElement("strong");
+  strong.textContent = `${label}：`;
+  paragraph.append(strong, value);
+  container.appendChild(paragraph);
 }
 
 function renderEvidence(evidence) {
@@ -298,6 +350,7 @@ prevBtn.addEventListener("click", () => {
   currentIndex -= 1;
   renderQuestion();
 });
+nextBtn.addEventListener("click", advanceToNext);
 document.getElementById("restartBtn").addEventListener("click", startQuiz);
 document.getElementById("copyBtn").addEventListener("click", async () => {
   if (!latestResult) return;

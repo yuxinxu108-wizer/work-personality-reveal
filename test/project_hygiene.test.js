@@ -59,3 +59,24 @@ test("result page has a stable confidence display target", () => {
   assert.match(appSource, /payload\.confidence/);
   assert.match(appSource, /result_explanation/);
 });
+
+test("frontend renders detailed action plan fields", () => {
+  const appSource = fs.readFileSync(path.join(root, "frontend/js/app.js"), "utf8");
+
+  assert.match(appSource, /day\.goal/);
+  assert.match(appSource, /day\.tasks/);
+  assert.match(appSource, /day\.deliverable/);
+  assert.match(appSource, /day\.resume_sentence/);
+  assert.match(appSource, /day\.jd_keywords/);
+});
+
+test("quiz keeps auto advance while exposing a manual next button", () => {
+  const html = fs.readFileSync(path.join(root, "frontend/index.html"), "utf8");
+  const appSource = fs.readFileSync(path.join(root, "frontend/js/app.js"), "utf8");
+
+  assert.match(html, /id="nextBtn"/);
+  assert.doesNotMatch(html, /选择后自动进入下一题/);
+  assert.match(appSource, /const nextBtn/);
+  assert.match(appSource, /ADVANCE_DELAY_MS/);
+  assert.match(appSource, /advanceToNext/);
+});

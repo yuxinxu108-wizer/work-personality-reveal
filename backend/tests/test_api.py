@@ -602,6 +602,18 @@ def test_api_returns_directions_questions_and_assessment(tmp_path: Path, monkeyp
     assert payload["confidence"]["level"] in {"high", "medium", "low"}
     assert payload["confidence"]["valid_answer_count"] == 25
     assert payload["result_explanation"]
+    action_plan = payload["result"]["action_plan"]
+    assert len(action_plan) == 7
+    assert {
+        "label",
+        "title",
+        "goal",
+        "tasks",
+        "deliverable",
+        "resume_sentence",
+        "jd_keywords",
+    }.issubset(action_plan[0])
+    assert len(action_plan[0]["tasks"]) >= 3
     assert payload["evidence"]["jd_count"] == 0
 
 

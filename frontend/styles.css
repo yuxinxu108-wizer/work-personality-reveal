@@ -136,6 +136,12 @@ h1 {
   background: var(--accent-strong);
 }
 
+.primary-btn:disabled {
+  background: #b7c7dd;
+  box-shadow: none;
+  cursor: not-allowed;
+}
+
 .secondary-btn,
 .ghost-btn {
   background: #fff;
