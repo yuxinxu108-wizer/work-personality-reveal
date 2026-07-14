@@ -1,129 +1,164 @@
-# Intern Direction Test
+# 实习证据向导
 
-JD-backed internship direction assessment MVP for Chinese internet internship roles.
+这是一个面向产品 / 运营实习准备的 Web 工具。当前正式前端已经切换为 Vite + React 高保真页面，和本地演示地址 `http://127.0.0.1:5174/` 看到的是同一版。
 
-The current product includes:
+产品主流程：
 
-- FastAPI backend
-- SQLite local database
-- 25-question assessment
-- 9 internship directions
-- JD evidence summaries
-- Static frontend served from `frontend/`
-- 148 条 BOSS JD in `data/pilot/collected_jds.csv`
-- Human-review CSV workflow in `data/pilot/review.csv`
+```text
+首页
+→ 选择当前求职状态
+→ 岗位理解
+→ 输入真实经历
+→ AI 追问与证据匹配
+→ 输出作品集结构、简历 bullet、面试讲述提纲
+```
 
-User-facing AI explanation remains a placeholder. Internal JD annotation can run through fixture data or OpenAI mode for the pilot data workflow.
+“不知道方向”路径会调用 FastAPI + SQLite 的真实测评接口，拉取 25 道题并提交答案生成方向结果。
 
-## Current Project Entry
+## 技术栈
 
-The formal frontend entry is:
+- 前端：Vite、React、Tailwind、Lucide、Recharts
+- 后端：FastAPI
+- 数据库：SQLite，本地默认 `data/app.db`
+- AI：Vite dev middleware 调用 OpenAI 或 DeepSeek，配置在 `.env.local`
 
-`frontend/index.html`
+## 项目入口
 
-The formal backend entry is:
+前端入口：
 
-`backend/app/main.py`
+```text
+index.html
+src/main.tsx
+src/app/App.tsx
+```
 
-Root-level `data.js` and `scoring.js` are retained for legacy scoring tests. Do not treat them as the current product frontend.
+后端入口：
 
-## Setup
+```text
+backend/app/main.py
+```
 
-Create the Python environment and install backend dependencies:
+旧版静态前端目录已移除，当前仓库只保留高保真 React 前端入口。
+
+## 本地启动
+
+安装前端依赖：
+
+```bash
+npm install
+```
+
+创建后端 Python 环境并安装依赖：
 
 ```bash
 npm run setup
 ```
 
-This creates `.venv` and installs `backend/requirements.txt`.
-
-## Run Locally
-
-Start the backend:
+启动 FastAPI 后端：
 
 ```bash
 npm run backend
 ```
 
-Start the frontend in a separate terminal:
+另开一个终端启动前端：
 
 ```bash
-npm run frontend
+npm run dev
 ```
 
-Open:
+打开：
 
 ```text
 http://127.0.0.1:5174/
 ```
 
-## Database
+后端健康检查：
 
-`data/app.db` is the local SQLite database used by the app.
+```text
+http://127.0.0.1:8000/api/health
+```
 
-To seed the manual baseline records without touching the pilot CSV files:
+## AI 配置
+
+复制示例配置：
+
+```bash
+cp .env.local.example .env.local
+```
+
+如果使用 DeepSeek：
+
+```text
+AI_PROVIDER=deepseek
+DEEPSEEK_API_KEY=你的 DeepSeek key
+DEEPSEEK_MODEL=deepseek-v4-flash
+DEEPSEEK_BASE_URL=https://api.deepseek.com
+```
+
+`.env.local` 已被 git 忽略，不要提交真实 API key。
+
+## 数据库
+
+本地 SQLite 文件是：
+
+```text
+data/app.db
+```
+
+如果本地没有数据库，可以先运行：
 
 ```bash
 npm run db:seed
 ```
 
-The pilot data lives in:
+当前后端提供的关键接口：
 
-- `data/pilot/collected_jds.csv`: 148 条 BOSS JD prepared for import
-- `data/pilot/review.csv`: reviewed annotation CSV used by the pilot import flow
-
-The current pilot review file was generated from cleaned BOSS JD data and should still be sampled manually before being treated as strong market evidence.
-
-## Real JD Pilot Loop
-
-The app separates manually seeded examples from formal market evidence. Manual seed records support local schema validation and product flow testing; formal market evidence should come from reviewed real public JD records.
-
-Run the pilot pipeline:
-
-```bash
-PYTHONPATH=. .venv/bin/python scripts/import_collected_jds.py --db data/app.db --csv data/pilot/collected_jds.csv
-PYTHONPATH=. .venv/bin/python scripts/run_jd_ai_annotation.py --db data/app.db --provider fixture --fixture-json data/pilot/ai_annotation_fixture.json
-PYTHONPATH=. .venv/bin/python scripts/export_jd_review.py --db data/app.db --csv data/pilot/review.csv
-PYTHONPATH=. .venv/bin/python scripts/import_reviewed_jds.py --db data/app.db --csv data/pilot/review.csv
-PYTHONPATH=. .venv/bin/python scripts/pilot_metrics.py --db data/app.db
+```text
+GET  /api/health
+GET  /api/questions
+POST /api/assessment/submit
+GET  /api/evidence/{direction_key}
 ```
 
-Use fixture mode when model access is unavailable or when testing the review flow.
+前端方向测评路径会默认请求：
 
-## Verify
+```text
+http://127.0.0.1:8000
+```
 
-Run frontend and Node scoring tests:
+如需改地址，设置：
+
+```text
+VITE_ASSESSMENT_API_BASE=http://127.0.0.1:8000
+```
+
+## 验证
+
+前端测试：
 
 ```bash
 npm test
 ```
 
-Run backend tests:
+前端构建：
+
+```bash
+npm run build
+```
+
+后端测试：
 
 ```bash
 npm run backend:test
 ```
 
-Build the product data quality report:
-
-```bash
-npm run data:quality
-```
-
-Run the full local verification suite:
+全量验证：
 
 ```bash
 npm run verify
 ```
 
-If backend tests report that `pytest` is unavailable, run:
+## 说明
 
-```bash
-npm run setup
-```
-
-## Notes
-
-- `data/app.db` is generated locally and ignored by git.
-- `data/pilot` contains the current real JD import files.
-- Resume upload, real user-facing AI explanation, login, admin UI, and production deployment are outside the current MVP.
+- `node_modules/`、`dist/`、`.env.local`、`data/app.db` 不进入 Git。
+- 当前产品重点是目标岗位理解、真实经历证据匹配和求职材料生成。

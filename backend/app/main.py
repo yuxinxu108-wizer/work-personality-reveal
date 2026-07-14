@@ -126,7 +126,6 @@ def submit_assessment(request: AssessmentSubmitRequest) -> dict[str, Any]:
                 "用一个小项目证明你能完成这些任务。",
                 "把项目表达成岗位关键词和可验证结果。",
             ],
-            "action_plan": [],
             "portfolio_suggestion": main_direction["portfolio_guidance"],
         },
         "evidence": evidence,
